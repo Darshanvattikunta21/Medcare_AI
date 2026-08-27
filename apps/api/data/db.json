@@ -1,0 +1,471 @@
+{
+  "users": [
+    {
+      "id": "user-3",
+      "role": "patient",
+      "name": "Darshan",
+      "email": "darshanvattikunta@gmail.com",
+      "phone": "+918919722523",
+      "password": "scrypt:61e65f255d123de3edd9e736d9504053:417126c17109eacda1fc4299b78abded6725c2578ed1a1fdb504a3e3a9e3b8031c374ff63aa8497487b39c98939dd994fab06fdac0d23ddb7895b33074b25621",
+      "emailVerified": true,
+      "passwordResetOtp": "382987",
+      "passwordResetOtpExpiresAt": "2026-08-27T07:45:32.371Z",
+      "conditions": [],
+      "medications": [],
+      "allergies": [],
+      "addresses": [
+        {
+          "id": "addr-1",
+          "label": "Home",
+          "line1": "Saveetha University Time Clock",
+          "city": "KANCHIPURAM",
+          "state": "Tamil Nadu",
+          "pinCode": "602105",
+          "landmark": "",
+          "instructions": ""
+        },
+        {
+          "id": "addr-2",
+          "label": "Home",
+          "line1": "Saveetha University Time Clock",
+          "city": "KANCHIPURAM",
+          "state": "Tamil Nadu",
+          "pinCode": "602105",
+          "landmark": "",
+          "instructions": ""
+        }
+      ],
+      "settings": {
+        "notificationsEnabled": true,
+        "biometricLogin": false,
+        "darkMode": false,
+        "language": "English"
+      },
+      "createdAt": "2026-08-25T05:18:55.112Z",
+      "updatedAt": "2026-08-27T07:37:28.399Z"
+    },
+    {
+      "id": "user-1",
+      "role": "patient",
+      "name": "Darshan",
+      "email": "darshan@email.com",
+      "phone": "+91 8919722523",
+      "password": "scrypt:37c01e905261ac8c6690f330c56c2372:30f4e9bd19f0bc7c94181b66f7c612bf544583f61e4c3be4918f0bc6b4aab1e638eac75fba05fd9feb3f1702f6557db26b4be50d68baabc1ba218cbf03074ebd",
+      "emailVerified": true,
+      "conditions": [
+        "Diabetes Type 2",
+        "Hypertension"
+      ],
+      "medications": [
+        "Metformin 500mg",
+        "Amlodipine 5mg"
+      ],
+      "allergies": [
+        "Penicillin",
+        "Dust"
+      ],
+      "addresses": [
+        {
+          "id": "addr-1",
+          "label": "Home",
+          "line1": "12 Lake View Residency",
+          "city": "Bengaluru",
+          "state": "Karnataka",
+          "pinCode": "560001",
+          "landmark": "Near Lakeside Park",
+          "instructions": "Call on arrival"
+        }
+      ],
+      "settings": {
+        "notificationsEnabled": true,
+        "biometricLogin": false,
+        "darkMode": false,
+        "language": "English"
+      },
+      "createdAt": "2026-08-25T04:28:30.116Z",
+      "updatedAt": "2026-08-25T05:06:27.607Z"
+    },
+    {
+      "id": "user-2",
+      "role": "pharmacist",
+      "name": "Pharma Owner",
+      "email": "pharma@email.com",
+      "phone": "+91 99999 11111",
+      "password": "scrypt:b36a93583fae303d6c76a1aa5d4d6703:1239a32066189be606431391a0ead4d3a3589528e3d805d5ec5abdb2b204aa69c3d84eafe88078f8e43add92a6490be0665976a3d8f3655013ae1e90bc62683d",
+      "emailVerified": true,
+      "conditions": [],
+      "medications": [],
+      "allergies": [],
+      "addresses": [],
+      "settings": {
+        "notificationsEnabled": true,
+        "biometricLogin": false,
+        "darkMode": false,
+        "language": "English"
+      },
+      "createdAt": "2026-08-25T04:28:30.116Z",
+      "updatedAt": "2026-08-25T04:28:30.116Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "MC-004503",
+      "userId": "user-3",
+      "status": "Confirmed",
+      "eta": "ETA 37 mins",
+      "items": [
+        "Paracetamol 650mg x2",
+        "Ibuprofen 400mg x1"
+      ],
+      "pharmacy": "CarePlus Pharmacy",
+      "total": "Rs 161",
+      "addressId": "addr-1",
+      "paymentMethod": "Razorpay",
+      "createdAt": "2026-08-27T07:37:35.722Z",
+      "issueReported": false,
+      "deliveryStage": "Confirmed",
+      "paymentStatus": "paid",
+      "paymentReference": "RAZORPAY-1787816255720",
+      "trackingTimeline": [
+        {
+          "stage": "Order placed",
+          "status": "completed",
+          "timestamp": "2026-08-27T07:37:35.722Z",
+          "description": "Your order request was created successfully."
+        },
+        {
+          "stage": "Payment confirmed",
+          "status": "completed",
+          "timestamp": "2026-08-27T07:39:35.722Z",
+          "description": "Payment was confirmed by the gateway."
+        },
+        {
+          "stage": "Pharmacy review",
+          "status": "current",
+          "timestamp": "2026-08-27T07:45:35.722Z",
+          "description": "Pharmacist verification and stock allocation are in progress."
+        },
+        {
+          "stage": "Out for delivery",
+          "status": "upcoming",
+          "timestamp": "2026-08-27T08:02:35.722Z",
+          "description": "A delivery partner has been assigned to the order."
+        },
+        {
+          "stage": "Delivered",
+          "status": "upcoming",
+          "timestamp": "2026-08-27T08:32:35.722Z",
+          "description": "The order is expected to reach the patient."
+        }
+      ]
+    },
+    {
+      "id": "MC-004521",
+      "userId": "user-1",
+      "status": "Out for delivery",
+      "eta": "ETA 18 mins",
+      "items": [
+        "Paracetamol 650mg",
+        "ORS Sachets"
+      ],
+      "pharmacy": "CarePlus Pharmacy",
+      "total": "Rs 200",
+      "addressId": "addr-1",
+      "paymentMethod": "Razorpay",
+      "createdAt": "2026-08-25T04:28:30.117Z",
+      "issueReported": false
+    },
+    {
+      "id": "MC-004487",
+      "userId": "user-1",
+      "status": "Delivered",
+      "eta": "Delivered yesterday",
+      "items": [
+        "Metformin 500mg",
+        "Atorvastatin 10mg"
+      ],
+      "pharmacy": "Metro Meds",
+      "total": "Rs 215",
+      "addressId": "addr-1",
+      "paymentMethod": "Razorpay",
+      "createdAt": "2026-08-24T04:28:30.117Z",
+      "issueReported": false
+    }
+  ],
+  "prescriptions": [
+    {
+      "id": "rx-1",
+      "userId": "user-1",
+      "doctorName": "Dr. Mehta",
+      "patientName": "Ravi Kumar",
+      "status": "verified",
+      "medicines": [
+        "Paracetamol 650mg",
+        "Cetirizine 10mg"
+      ],
+      "notes": "Continue medication after meals.",
+      "confidence": "91%",
+      "createdAt": "2026-08-25T04:28:30.116Z"
+    }
+  ],
+  "cart": [
+    {
+      "userId": "user-1",
+      "medicineId": "paracetamol-650",
+      "quantity": 1
+    },
+    {
+      "userId": "user-1",
+      "medicineId": "cetirizine-10",
+      "quantity": 1
+    }
+  ],
+  "notifications": [
+    {
+      "id": "n-1787818319621",
+      "userId": "user-3",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787816555504",
+      "userId": "user-2",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787816255728",
+      "userId": "user-3",
+      "title": "Order confirmed",
+      "message": "MC-004503 has been routed to CarePlus Pharmacy and will arrive in 37 mins.",
+      "icon": "package",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787816196886",
+      "userId": "user-3",
+      "title": "Cart updated",
+      "message": "Ibuprofen 400mg added to your cart.",
+      "icon": "cart",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787816195383",
+      "userId": "user-3",
+      "title": "Cart updated",
+      "message": "Paracetamol 650mg added to your cart.",
+      "icon": "cart",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787816161429",
+      "userId": "user-3",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787816069872",
+      "userId": "user-3",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787815882598",
+      "userId": "user-2",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787808367104",
+      "userId": "user-2",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787808281710",
+      "userId": "user-2",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787808045894",
+      "userId": "user-2",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787807569857",
+      "userId": "user-2",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787805750490",
+      "userId": "user-3",
+      "title": "Cart updated",
+      "message": "Paracetamol 650mg added to your cart.",
+      "icon": "cart",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787804115376",
+      "userId": "user-3",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787647366424",
+      "userId": "user-3",
+      "title": "AI symptom assessment ready",
+      "message": "Viral Fever guidance has been generated.",
+      "icon": "ai",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787635135172",
+      "userId": "user-3",
+      "title": "Welcome to MediCare AI",
+      "message": "Account created for Darshan Darshan.",
+      "icon": "welcome",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787633894383",
+      "userId": "user-2",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787633223695",
+      "userId": "user-2",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787632495484",
+      "userId": "user-2",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787632221982",
+      "userId": "user-2",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n-1787632110356",
+      "userId": "user-2",
+      "title": "Login detected",
+      "message": "Your MediCare AI account was accessed successfully.",
+      "icon": "lock",
+      "time": "Just now",
+      "read": false
+    },
+    {
+      "id": "n1",
+      "icon": "📦",
+      "title": "Order shipped",
+      "message": "Your Paracetamol order is on the way from GreenLife Pharmacy.",
+      "time": "2 min ago",
+      "userId": "user-1",
+      "read": false
+    },
+    {
+      "id": "n2",
+      "icon": "🤖",
+      "title": "AI tip",
+      "message": "Remember your evening dose of Metformin after dinner.",
+      "time": "1 hr ago",
+      "userId": "user-1",
+      "read": false
+    },
+    {
+      "id": "n3",
+      "icon": "⚠️",
+      "title": "Drug interaction alert",
+      "message": "A new antibiotic may conflict with your current allergy medication.",
+      "time": "Today",
+      "userId": "user-1",
+      "read": false
+    }
+  ],
+  "symptomAssessments": [
+    {
+      "id": "sa-1",
+      "userId": "user-3",
+      "symptoms": [
+        "Skin rash",
+        "Body pain",
+        "Headache",
+        "Fever"
+      ],
+      "duration": "2-3 days",
+      "severity": 8,
+      "notes": "Fever for 2 days, body pain, headache...",
+      "condition": "Viral Fever",
+      "confidence": "95%",
+      "createdAt": "2026-08-25T08:42:46.422Z"
+    }
+  ],
+  "medicineStocks": {
+    "ceftriaxone-1g": "in_stock",
+    "insulin-glargine": "in_stock",
+    "amoxicillin-500": "in_stock",
+    "azithromycin-500": "in_stock",
+    "baby-diaper-rash-cream": "out_of_stock",
+    "savlon-antiseptic": "limited",
+    "dettol-antiseptic-liquid": "limited",
+    "betadine-antiseptic": "out_of_stock"
+  },
+  "deliveryBaseCharge": 40,
+  "deliveryRatePerKm": 8
+}

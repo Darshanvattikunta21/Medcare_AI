@@ -1,0 +1,9 @@
+{
+  "name": "MediCare AI — 42 Page Mobile UI",
+  "id": "medicare-ai-42-pages",
+  "api": "1.0.0",
+  "main": "code.js",
+  "editorType": [
+    "figma"
+  ]
+}

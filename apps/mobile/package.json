@@ -1,0 +1,64 @@
+{
+  "name": "mobile",
+  "private": true,
+  "version": "0.1.0",
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "node ./scripts/expo-safe.cjs start",
+    "android": "node ./scripts/expo-safe.cjs run:android",
+    "ios": "node ./scripts/expo-safe.cjs run:ios",
+    "config": "node ./scripts/expo-safe.cjs config --type public",
+    "lint": "expo lint",
+    "typecheck": "tsc --noEmit",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.29.7",
+    "@expo/metro-runtime": "~56.0.16",
+    "@medicare/api-client": "workspace:*",
+    "@medicare/core": "workspace:*",
+    "@medicare/design": "workspace:*",
+    "@react-native-async-storage/async-storage": "2.2.0",
+    "@stripe/stripe-react-native": "^0.68.0",
+    "expo": "~56.0.14",
+    "expo-asset": "~56.0.18",
+    "expo-camera": "^57.0.3",
+    "expo-constants": "~56.0.20",
+    "expo-haptics": "^57.0.0",
+    "expo-image-manipulator": "^57.0.7",
+    "expo-image-picker": "^57.0.2",
+    "expo-linking": "~56.0.15",
+    "expo-location": "^57.0.2",
+    "expo-mlkit-ocr": "^0.2.7",
+    "expo-router": "~56.2.13",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-native": "0.85.3",
+    "react-native-razorpay": "^3.0.0",
+    "react-native-safe-area-context": "~5.7.0",
+    "socket.io-client": "^4.8.3"
+  },
+  "devDependencies": {
+    "@expo/cli": "^56.1.18",
+    "@react-native/jest-preset": "^0.85.3",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-native": "^14.0.1",
+    "@types/jest": "^30.0.0",
+    "@types/react": "~19.2.0",
+    "babel-preset-expo": "^56.0.16",
+    "eslint-config-expo": "~56.0.4",
+    "jest": "^29.7.0",
+    "jest-expo": "^57.0.4",
+    "react-test-renderer": "^19.2.3",
+    "typescript": "^5.7.2"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "transformIgnorePatterns": [
+      "node_modules/(?!(.pnpm/)?((jest-)?react-native|@react-native(-community)?|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg))"
+    ],
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "medicare-appium-framework",
+  "version": "1.0.0",
+  "description": "Enterprise Appium E2E Automation Framework for MediCare AI",
+  "scripts": {
+    "test": "mocha --timeout 120000 --reporter spec tests/**/*.test.js",
+    "test:smoke": "mocha --timeout 120000 --grep '@smoke' tests/**/*.test.js",
+    "test:regression": "mocha --timeout 120000 --grep '@regression' tests/**/*.test.js",
+    "test:auth": "mocha --timeout 120000 tests/auth/*.test.js",
+    "test:parallel": "mocha --timeout 120000 --parallel tests/**/*.test.js",
+    "report": "node utils/report-generator.js"
+  },
+  "dependencies": {
+    "webdriverio": "^8.36.0",
+    "@wdio/appium-service": "^8.36.0",
+    "@wdio/local-runner": "^8.36.0",
+    "@wdio/mocha-framework": "^8.36.0",
+    "@wdio/spec-reporter": "^8.36.0",
+    "@wdio/json-reporter": "^8.36.0",
+    "mocha": "^10.4.0",
+    "chai": "^4.4.1",
+    "allure-commandline": "^2.30.0",
+    "@wdio/allure-reporter": "^8.36.0",
+    "xlsx": "^0.18.5",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.7",
+    "@types/chai": "^4.3.16"
+  }
+}

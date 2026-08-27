@@ -1,0 +1,48 @@
+{
+  "cli": {
+    "version": ">= 5.0.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "android": {
+        "resourceClass": "default"
+      },
+      "ios": {
+        "resourceClass": "default"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "resourceClass": "default"
+      },
+      "ios": {
+        "resourceClass": "default"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "android": {
+        "resourceClass": "default"
+      },
+      "ios": {
+        "resourceClass": "default"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccount": "@credentials",
+        "track": "internal"
+      },
+      "ios": {
+        "appleId": "@apple_id",
+        "appleTeamId": "@apple_team_id",
+        "ascAppId": "@asc_app_id"
+      }
+    }
+  }
+}

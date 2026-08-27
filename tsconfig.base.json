@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "strict": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@medicare/core": ["packages/core/src"],
+      "@medicare/design": ["packages/design/src"],
+      "@medicare/api-client": ["packages/api-client/src"]
+    }
+  }
+}

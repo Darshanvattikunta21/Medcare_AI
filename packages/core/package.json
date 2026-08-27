@@ -1,0 +1,14 @@
+{
+  "name": "@medicare/core",
+  "private": true,
+  "version": "0.1.0",
+  "main": "src/main.ts",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}

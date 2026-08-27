@@ -1,0 +1,84 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: medicare-ai-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=medicare_ai
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d medicare_ai"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: medicare-ai-api
+    ports:
+      - "4000:4000"
+    environment:
+      - NODE_ENV=production
+      - APP_ENV=production
+      - PORT=4000
+      - PERSISTENCE_PROVIDER=database
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/medicare_ai?schema=public
+      - CORS_ORIGIN=http://localhost:3000,http://localhost:5173
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:4000
+      - EXPO_PUBLIC_API_BASE_URL=http://localhost:4000
+      - API_DATA_FILE=/app/data/db.json
+    volumes:
+      - ./apps/api/data:/app/data
+      - ./apps/api/prisma:/app/apps/api/prisma
+      - ./apps/api/storage:/app/storage
+    depends_on:
+      postgres:
+        condition: service_healthy
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:4000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.web
+    container_name: medicare-ai-web
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_BASE_URL=http://api:4000
+    depends_on:
+      - api
+    restart: unless-stopped
+
+  mobile-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile.mobile
+    container_name: medicare-ai-mobile
+    ports:
+      - "19000:19000"
+      - "19001:19001"
+    environment:
+      - EXPO_PUBLIC_API_BASE_URL=http://api:4000
+    depends_on:
+      - api
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+
+volumes:
+  postgres_data:

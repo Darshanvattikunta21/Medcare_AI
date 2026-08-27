@@ -1,0 +1,185 @@
+name: "🔐 Backend Security Review + API Testing"
+
+on:
+  push:
+    branches: [main, develop, master]
+  pull_request:
+    branches: [main, master]
+  workflow_dispatch:
+  schedule:
+    - cron: "0 4 * * 1"  # Weekly Monday 4am UTC
+
+env:
+  API_BASE_URL: "http://localhost:4000"
+  NODE_VERSION: "20"
+
+jobs:
+  security-scan:
+    name: "🔍 SAST + Dependency Scanning"
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+      contents: read
+    steps:
+      - name: "📥 Checkout Repository"
+        uses: actions/checkout@v4
+
+      - name: "📱 Setup Node.js"
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: "🐍 Setup Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: "📦 Install pnpm"
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: "📦 Install Dependencies"
+        run: pnpm install --frozen-lockfile
+
+      - name: "🔍 Phase 1 · Backend Discovery"
+        run: python automation/security/phase1_discovery.py
+
+      - name: "🔑 Run Semgrep SAST"
+        uses: returntocorp/semgrep-action@v1
+        with:
+          config: >-
+            p/owasp-top-ten
+            p/javascript
+            p/typescript
+            p/nodejs
+            p/express
+            p/jwt
+            p/secrets
+          generateSarif: "1"
+        continue-on-error: true
+
+      - name: "📦 Run Trivy Vulnerability Scanner"
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: "fs"
+          scan-ref: "."
+          format: "json"
+          output: "automation/security/output/trivy-results.json"
+          severity: "CRITICAL,HIGH,MEDIUM"
+          exit-code: "0"
+        continue-on-error: true
+
+      - name: "🔑 Run Gitleaks Secret Detection"
+        uses: gitleaks/gitleaks-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITLEAKS_ENABLE_COMMENTS: false
+        continue-on-error: true
+
+      - name: "📦 OWASP Dependency Check"
+        uses: dependency-check/Dependency-Check_Action@main
+        id: depcheck
+        with:
+          project: "MediCare AI"
+          path: "."
+          format: "JSON"
+          out: "automation/security/output"
+          args: >
+            --enableExperimental
+            --exclude "**/.git/**"
+        continue-on-error: true
+
+      - name: "📤 Upload SAST Results"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: sast-results-${{ github.run_number }}
+          path: automation/security/output/
+          retention-days: 30
+
+  api-testing:
+    name: "🔌 Functional API + Security Testing"
+    runs-on: ubuntu-latest
+    services:
+      api:
+        image: node:20-alpine
+    steps:
+      - name: "📥 Checkout Repository"
+        uses: actions/checkout@v4
+
+      - name: "📱 Setup Node.js"
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: "🐍 Setup Python"
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: "📦 Install pnpm"
+        uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - name: "📦 Install All Dependencies"
+        run: pnpm install --frozen-lockfile
+
+      - name: "📦 Install Security Test Framework"
+        run: |
+          pip install requests openpyxl jinja2 pyjwt colorama
+          npm install -g artillery k6 || true
+
+      - name: "🚀 Start API Server"
+        run: |
+          pnpm --filter api dev &
+          sleep 10
+          curl -f http://localhost:4000/api/health || echo "API may not have health endpoint"
+
+      - name: "🔒 Phase 3 · SAST Security Tests (400+ Test Cases)"
+        run: python automation/security/run_security_tests.py --phase sast
+
+      - name: "🔒 Phase 4 · DAST Security Tests"
+        run: python automation/security/run_security_tests.py --phase dast --base-url ${{ env.API_BASE_URL }}
+
+      - name: "🔌 Phase 6 · Functional API Tests (100+ Test Cases)"
+        run: python automation/security/run_api_tests.py --base-url ${{ env.API_BASE_URL }}
+
+      - name: "⚡ Phase 7 · Performance Tests"
+        run: |
+          # k6 load test
+          k6 run automation/performance/k6-load-test.js \
+            --env BASE_URL=${{ env.API_BASE_URL }} \
+            --out json=automation/security/output/k6-results.json 2>/dev/null || true
+
+      - name: "📊 Generate Security Excel Report"
+        run: python automation/reports/generate_excel.py --suite security --run-number ${{ github.run_number }}
+
+      - name: "🌐 Generate Security HTML Report"
+        run: python automation/reports/generate_html.py --suite security --run-number ${{ github.run_number }}
+
+      - name: "📤 Upload Security Reports"
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: "MediCare-Security-Reports-Build-${{ github.run_number }}"
+          path: |
+            automation/reports/output/security/
+            automation/security/output/
+          retention-days: 30
+
+      - name: "🌐 Deploy Security Reports to GitHub Pages"
+        uses: peaceiris/actions-gh-pages@v4
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: automation/reports/output/security
+          destination_dir: reports/latest/security
+          keep_files: true
+          commit_message: "🔐 Security Report · Build #${{ github.run_number }}"
+
+      - name: "📋 Publish Security Summary"
+        if: always()
+        run: |
+          cat automation/reports/output/security/summary.md >> $GITHUB_STEP_SUMMARY 2>/dev/null || echo "## Security Review Complete — Build #${{ github.run_number }}" >> $GITHUB_STEP_SUMMARY

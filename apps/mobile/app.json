@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "MediCare AI",
+    "slug": "medicare-ai",
+    "scheme": "medicareai",
+    "platforms": ["android", "ios"],
+    "orientation": "portrait",
+    "android": {
+      "package": "com.medicareai.app",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.medicareai.app",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Camera access is required to scan and read medical prescriptions.",
+        "NSPhotoLibraryUsageDescription": "MediCare AI accesses your photo library to upload prescription images for verification.",
+        "NSLocationWhenInUseUsageDescription": "MediCare AI uses your location to show real-time delivery tracking on the map.",
+        "NSLocationAlwaysUsageDescription": "MediCare AI uses background location to keep your order tracking map updated."
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow MediCare AI to access your photos to upload prescriptions.",
+          "cameraPermission": "Camera access is required to scan and read medical prescriptions."
+        }
+      ],
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Camera access is required to scan and read medical prescriptions."
+        }
+      ],
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Allow MediCare AI to access your location for live delivery tracking.",
+          "locationAlwaysPermission": "Allow MediCare AI to access your location in the background for order tracking."
+        }
+      ],
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.medicareai.app",
+          "enableGooglePay": true
+        }
+      ]
+    ]
+  }
+}

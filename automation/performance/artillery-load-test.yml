@@ -1,0 +1,207 @@
+config:
+  # MediCare AI · Artillery Load Test Configuration
+  # Usage: artillery run artillery-load-test.yml --target http://localhost:4000
+
+  target: "{{ $env.BASE_URL || 'http://localhost:4000' }}"
+  
+  plugins:
+    expect: {}
+    metrics-by-endpoint: {}
+  
+  environments:
+    baseline:
+      phases:
+        - name: "Baseline Load — 100 Users / 1 Minute"
+          duration: 60
+          arrivalRate: 100
+          rampTo: 100
+    
+    stress:
+      phases:
+        - name: "Warm up"
+          duration: 30
+          arrivalRate: 50
+        - name: "Stress — 200 users"
+          duration: 60
+          arrivalRate: 200
+        - name: "Stress — 500 users"
+          duration: 60
+          arrivalRate: 500
+        - name: "Cool down"
+          duration: 30
+          arrivalRate: 50
+    
+    spike:
+      phases:
+        - name: "Normal load"
+          duration: 30
+          arrivalRate: 50
+        - name: "Spike!"
+          duration: 10
+          arrivalRate: 500
+        - name: "Sustained spike"
+          duration: 60
+          arrivalRate: 500
+        - name: "Recovery"
+          duration: 30
+          arrivalRate: 50
+    
+    endurance:
+      phases:
+        - name: "Endurance — 100 users / 30 minutes"
+          duration: 1800
+          arrivalRate: 100
+
+  defaults:
+    headers:
+      Content-Type: "application/json"
+      Accept: "application/json"
+
+  ensure:
+    p95: 1000
+    median: 300
+    maxErrorRate: 5
+
+scenarios:
+  - name: "Authentication Flow"
+    weight: 25
+    flow:
+      - post:
+          url: "/api/auth/login"
+          json:
+            email: "darshanvattikunta@gmail.com"
+            password: "demo123"
+          capture:
+            - json: "$.token"
+              as: "auth_token"
+          expect:
+            - statusCode:
+                - 200
+                - 401
+
+      - get:
+          url: "/api/auth/profile"
+          headers:
+            Authorization: "Bearer {{ auth_token }}"
+          expect:
+            - statusCode:
+                - 200
+                - 401
+
+  - name: "Catalog Browse"
+    weight: 30
+    flow:
+      - post:
+          url: "/api/auth/login"
+          json:
+            email: "ravi@email.com"
+            password: "demo123"
+          capture:
+            - json: "$.token"
+              as: "auth_token"
+
+      - get:
+          url: "/api/catalog/categories"
+          headers:
+            Authorization: "Bearer {{ auth_token }}"
+          expect:
+            - statusCode: 200
+
+      - get:
+          url: "/api/catalog/medicines?limit=20"
+          headers:
+            Authorization: "Bearer {{ auth_token }}"
+          expect:
+            - statusCode: 200
+
+      - get:
+          url: "/api/catalog/medicines?category=tablets"
+          headers:
+            Authorization: "Bearer {{ auth_token }}"
+
+      - get:
+          url: "/api/catalog/medicines?q=paracetamol"
+          headers:
+            Authorization: "Bearer {{ auth_token }}"
+
+  - name: "Symptom Analysis"
+    weight: 20
+    flow:
+      - post:
+          url: "/api/auth/login"
+          json:
+            email: "darshanvattikunta@gmail.com"
+            password: "demo123"
+          capture:
+            - json: "$.token"
+              as: "auth_token"
+
+      - post:
+          url: "/api/symptoms/analyze"
+          headers:
+            Authorization: "Bearer {{ auth_token }}"
+          json:
+            symptoms:
+              - "Fever"
+              - "Headache"
+            severity: 6
+            notes: "Artillery load test"
+          expect:
+            - statusCode:
+                - 200
+                - 401
+
+  - name: "Cart Operations"
+    weight: 15
+    flow:
+      - post:
+          url: "/api/auth/login"
+          json:
+            email: "darshanvattikunta@gmail.com"
+            password: "demo123"
+          capture:
+            - json: "$.token"
+              as: "auth_token"
+
+      - get:
+          url: "/api/cart"
+          headers:
+            Authorization: "Bearer {{ auth_token }}"
+          expect:
+            - statusCode:
+                - 200
+                - 401
+
+      - post:
+          url: "/api/cart/items"
+          headers:
+            Authorization: "Bearer {{ auth_token }}"
+          json:
+            medicineId: "paracetamol-650"
+            quantity: 1
+          expect:
+            - statusCode:
+                - 200
+                - 201
+                - 401
+
+  - name: "App Snapshot"
+    weight: 10
+    flow:
+      - post:
+          url: "/api/auth/login"
+          json:
+            email: "ravi@email.com"
+            password: "demo123"
+          capture:
+            - json: "$.token"
+              as: "auth_token"
+
+      - get:
+          url: "/api/app/snapshot"
+          headers:
+            Authorization: "Bearer {{ auth_token }}"
+          expect:
+            - statusCode:
+                - 200
+                - 401

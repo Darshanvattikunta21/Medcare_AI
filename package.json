@@ -1,0 +1,23 @@
+{
+  "name": "medicare-ai-platform",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "pnpm@9.15.0",
+  "scripts": {
+    "dev": "pnpm --parallel --filter api --filter web dev",
+    "dev:web": "pnpm --filter web dev",
+    "dev:mobile": "pnpm --filter mobile start",
+    "dev:api": "pnpm --filter api dev",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
+    "test": "pnpm --filter api test",
+    "typecheck": "pnpm -r typecheck",
+    "validate:prod": "node scripts/validate-production.cjs",
+    "build:prod": "bash scripts/build-production.sh",
+    "deploy:docker": "bash scripts/deploy-docker.sh",
+    "deploy:k8s": "bash scripts/deploy-k8s.sh",
+    "docker:build": "docker build -t medicareai-api:latest . && docker build -f Dockerfile.web -t medicareai-web:latest .",
+    "docker:push": "docker push medicareai-api:latest && docker push medicareai-web:latest",
+    "docker:compose": "docker-compose up -d"
+  }
+}

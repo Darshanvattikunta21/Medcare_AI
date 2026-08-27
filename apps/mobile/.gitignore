@@ -1,0 +1,4 @@
+.expo/
+expo-env.d.ts
+expo-smoke.out.log
+expo-smoke.err.log

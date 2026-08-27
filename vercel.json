@@ -1,0 +1,20 @@
+{
+  "buildCommand": "pnpm build",
+  "outputDirectory": "apps/web/.next",
+  "framework": "nextjs",
+  "projectSettings": {
+    "sourceFilesOutsideRootDirectory": true,
+    "installCommand": "pnpm install",
+    "buildCommand": "pnpm build",
+    "devCommand": "pnpm dev:web"
+  },
+  "env": {
+    "NEXT_PUBLIC_API_BASE_URL": "@api_base_url"
+  },
+  "functions": {
+    "apps/web/pages/**": {
+      "memory": 3008,
+      "maxDuration": 60
+    }
+  }
+}

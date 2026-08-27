@@ -1,0 +1,49 @@
+# Multi-stage build for MediCare AI Web App
+FROM node:22-alpine AS builder
+
+WORKDIR /app
+
+RUN npm install -g pnpm@9.15.0
+
+COPY pnpm-workspace.yaml pnpm-lock.yaml package.json ./
+COPY apps/web ./apps/web
+COPY packages/core ./packages/core
+COPY packages/api-client ./packages/api-client
+COPY packages/design ./packages/design
+COPY tsconfig.base.json ./
+
+RUN pnpm install --frozen-lockfile
+RUN pnpm --filter @medicare/core build
+RUN pnpm --filter @medicare/design build
+RUN pnpm --filter @medicare/api-client build
+RUN pnpm --filter web build
+
+FROM node:22-alpine
+
+WORKDIR /app
+
+RUN npm install -g pnpm@9.15.0
+
+COPY pnpm-workspace.yaml pnpm-lock.yaml package.json ./
+COPY apps/web/package.json ./apps/web/package.json
+COPY packages/core/package.json ./packages/core/package.json
+COPY packages/api-client/package.json ./packages/api-client/package.json
+COPY packages/design/package.json ./packages/design/package.json
+
+COPY --from=builder /app/apps/web/.next ./apps/web/.next
+COPY --from=builder /app/apps/web/public ./apps/web/public
+COPY --from=builder /app/apps/web/next.config.ts ./apps/web/next.config.ts
+COPY --from=builder /app/packages/core/dist ./packages/core/dist
+COPY --from=builder /app/packages/api-client/dist ./packages/api-client/dist
+COPY --from=builder /app/packages/design/dist ./packages/design/dist
+
+RUN pnpm install --frozen-lockfile --prod
+
+WORKDIR /app/apps/web
+
+EXPOSE 3000
+
+ENV NODE_ENV=production
+ENV NEXT_TELEMETRY_DISABLED=1
+
+CMD ["pnpm", "start"]

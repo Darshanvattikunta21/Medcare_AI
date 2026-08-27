@@ -1,0 +1,212 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum UserRole {
+  patient
+  admin
+  pharmacist
+  delivery
+}
+
+enum PaymentStatus {
+  pending
+  authorized
+  paid
+  failed
+  cancelled
+  refunded
+}
+
+model User {
+  id                        String              @id @default(cuid())
+  role                      UserRole            @default(patient)
+  name                      String
+  email                     String              @unique
+  phone                     String
+  password                  String
+  emailVerified             Boolean             @default(false)
+  passwordResetOtp          String?
+  passwordResetOtpExpiresAt DateTime?
+  conditions                String[]
+  medications               String[]
+  allergies                 String[]
+  notificationsEnabled      Boolean             @default(true)
+  biometricLogin            Boolean             @default(false)
+  darkMode                  Boolean             @default(false)
+  language                  String              @default("English")
+  addresses                 Address[]
+  cartItems                 CartItem[]
+  notifications             Notification[]
+  orders                    Order[]
+  prescriptions             Prescription[]
+  symptomAssessments        SymptomAssessment[]
+  createdAt                 DateTime            @default(now())
+  updatedAt                 DateTime            @updatedAt
+}
+
+model Address {
+  id           String   @id @default(cuid())
+  userId       String
+  label        String
+  line1        String
+  city         String
+  state        String
+  pinCode      String
+  landmark     String?
+  instructions String?
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  orders       Order[]
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model Medicine {
+  id                   String     @id
+  name                 String
+  brand                String
+  price                String
+  tag                  String
+  category             String
+  description          String
+  prescriptionRequired Boolean    @default(false)
+  stockStatus          String     @default("in_stock")
+  cartItems            CartItem[]
+  orderItems           OrderItem[]
+  createdAt            DateTime   @default(now())
+  updatedAt            DateTime   @updatedAt
+}
+
+model CartItem {
+  id         String   @id @default(cuid())
+  userId     String
+  medicineId String
+  quantity   Int
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  medicine   Medicine @relation(fields: [medicineId], references: [id], onDelete: Restrict)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([userId, medicineId])
+  @@index([userId])
+}
+
+model Order {
+  id            String      @id @default(cuid())
+  userId        String
+  status        String
+  deliveryStage String      @default("Confirmed")
+  eta           String
+  pharmacy      String
+  total         String
+  addressId     String
+  paymentMethod String
+  paymentStatus PaymentStatus @default(pending)
+  paymentReference String?
+  paymentFailureReason String?
+  issueReported Boolean     @default(false)
+  trackingTimeline Json?
+  user          User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  address       Address     @relation(fields: [addressId], references: [id], onDelete: Restrict)
+  items         OrderItem[]
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+
+  @@index([userId])
+  @@index([addressId])
+}
+
+model OrderItem {
+  id                  String    @id @default(cuid())
+  orderId             String
+  medicineId          String?
+  name                String
+  quantity            Int
+  unitPrice           String?
+  lineTotal           String?
+  prescriptionRequired Boolean  @default(false)
+  order               Order     @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  medicine            Medicine? @relation(fields: [medicineId], references: [id], onDelete: SetNull)
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
+
+  @@index([orderId])
+  @@index([medicineId])
+}
+
+model Prescription {
+  id          String   @id @default(cuid())
+  userId      String
+  doctorName  String
+  patientName String
+  status      String
+  ocrStatus   String   @default("pending")
+  ocrProvider String?
+  medicines   String[]
+  dosageSummary String[]
+  notes       String?
+  confidence  String
+  sourceFileName String?
+  sourceMimeType String?
+  sourcePath     String?
+  extractedText  String?
+  validationIssues String[]
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  userId    String
+  icon      String
+  title     String
+  message   String
+  time      String
+  read      Boolean  @default(false)
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model SymptomAssessment {
+  id         String   @id @default(cuid())
+  userId     String
+  symptoms   String[]
+  duration   String
+  severity   Int
+  notes      String
+  condition  String
+  confidence String
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([userId])
+}
+
+model Reconciliation {
+  id                 String   @id @default(cuid())
+  provider           String
+  providerEvent      String
+  providerReference  String?
+  payload            Json
+  reconciledOrderId  String?
+  processedAt        DateTime @default(now())
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@index([provider])
+  @@index([providerReference])
+}
