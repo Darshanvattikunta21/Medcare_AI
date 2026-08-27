@@ -21,6 +21,16 @@ profileRouter.put("/settings", asyncHandler(async (req, res) => {
   res.json(await updateSettings(req.body ?? {}, req.currentUserId));
 }));
 
+import { listAddresses, addAddress, updateAddress, deleteAddress } from "../services/orders.service";
+
 profileRouter.get("/notifications", asyncHandler(async (req, res) => {
   res.json(await getNotifications(req.currentUserId));
+}));
+
+profileRouter.get("/addresses", asyncHandler(async (req, res) => {
+  res.json(await listAddresses(req.currentUserId));
+}));
+
+profileRouter.post("/addresses", asyncHandler(async (req, res) => {
+  res.json(await addAddress(req.body ?? {}, req.currentUserId));
 }));

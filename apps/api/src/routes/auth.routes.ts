@@ -28,6 +28,12 @@ authRouter.post("/reset-password", asyncHandler(async (req, res) => {
   res.status(result.ok ? 200 : 400).json(result);
 }));
 
-authRouter.get("/me", asyncHandler(async (req, res) => {
+import { requireAuth } from "../middleware/auth";
+
+authRouter.get("/me", requireAuth, asyncHandler(async (req, res) => {
+  res.json(await getAuthMe(req.currentUserId));
+}));
+
+authRouter.get("/profile", requireAuth, asyncHandler(async (req, res) => {
   res.json(await getAuthMe(req.currentUserId));
 }));

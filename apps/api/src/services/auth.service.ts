@@ -1,6 +1,6 @@
 import { env } from "../config/env";
 import { hashPassword, issueAuthToken, verifyPassword } from "../lib/auth";
-import { badRequest } from "../lib/errors";
+import { badRequest, unauthorized } from "../lib/errors";
 import { prisma } from "../lib/db";
 import { readDb, writeDb } from "../lib/file-db";
 import { asEmail, asTrimmedString } from "../lib/validation";
@@ -24,7 +24,7 @@ export async function login(payload: { email?: string; password?: string }) {
     const user = await getUserByEmail(email);
 
     if (!user || !verifyPassword(password, user.password)) {
-      throw badRequest("Invalid email or password");
+      throw unauthorized("Invalid email or password");
     }
 
     await addUserNotificationDb(user.id, "Login detected", "Your MediCare AI account was accessed successfully.", "lock");
@@ -43,7 +43,7 @@ export async function login(payload: { email?: string; password?: string }) {
   const user = db.users.find((item) => item.email.toLowerCase() === email);
 
   if (!user || !verifyPassword(password, user.password)) {
-    throw badRequest("Invalid email or password");
+    throw unauthorized("Invalid email or password");
   }
 
   addUserNotification(user.id, "Login detected", "Your MediCare AI account was accessed successfully.", "lock");

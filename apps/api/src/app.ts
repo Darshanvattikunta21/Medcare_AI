@@ -64,9 +64,11 @@ export function createApp() {
   });
 
   // Health check endpoint
-  app.get("/health", (_req, res) => {
+  const healthHandler = (_req: express.Request, res: express.Response) => {
     res.json({ status: "ok", service: "medicare-ai-api", env: env.appEnv, timestamp: new Date().toISOString() });
-  });
+  };
+  app.get("/health", healthHandler);
+  app.get("/api/health", healthHandler);
 
   // Ready check endpoint
   app.get("/ready", (_req, res) => {
@@ -82,6 +84,10 @@ export function createApp() {
   app.use("/api/payments", requireAuth, paymentsRouter);
   app.use("/api/v1/payments", requireAuth, paymentsRouter);
   app.use("/api/profile", requireAuth, profileRouter);
+  app.use("/api/notifications", requireAuth, (req, res, next) => {
+    req.url = "/notifications" + req.url.replace(/^\//, "");
+    profileRouter(req, res, next);
+  });
   app.use("/api/prescriptions", requireAuth, prescriptionsRouter);
   app.use("/api/v1/prescriptions", requireAuth, prescriptionsRouter);
   app.use("/api/symptoms", symptomsRouter);
