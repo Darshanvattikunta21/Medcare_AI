@@ -399,6 +399,81 @@ function buildCsvContent() {
 fs.writeFileSync(path.join(OUT_DIR, 'MediCare_AI_Master_Test_Report.csv'), buildCsvContent(), 'utf8');
 console.log(`✅ CSV Report: ${path.join(OUT_DIR, 'MediCare_AI_Master_Test_Report.csv')}`);
 
+// ── Generate Native Multi-Sheet Excel (.xlsx) Reports ────────────────────────
+try {
+  const XLSX = require('xlsx');
+  const wb = XLSX.utils.book_new();
+
+  // Helper to convert array of arrays to sheet
+  const makeSheet = (headers, dataRows) => XLSX.utils.aoa_to_sheet([headers, ...dataRows]);
+
+  // 1. Executed Test Cases (All suites)
+  const allCases = [
+    ...appium.map(c => [c.id, 'Appium Android', c.module, c.name, c.priority, c.status, c.execTime]),
+    ...selenium.map(c => [c.id, 'Selenium Web', c.module, c.name, c.priority, c.status, c.execTime]),
+    ...security.map(c => [c.id, 'Security Review', c.module, c.name, c.priority, c.status, c.execTime || 0.1]),
+    ...perf.map(p => [p.id, 'Performance', p.type, p.scenario, 'High', p.status, p.avg / 1000])
+  ];
+  XLSX.utils.book_append_sheet(wb, makeSheet(['Test ID', 'Suite', 'Module', 'Test Name', 'Priority', 'Status', 'Execution Time (s)'], allCases), 'Executed Test Cases');
+
+  // 2. Passed Tests
+  const passedCases = allCases.filter(r => r[5] === 'PASS');
+  XLSX.utils.book_append_sheet(wb, makeSheet(['Test ID', 'Suite', 'Module', 'Test Name', 'Priority', 'Status', 'Execution Time (s)'], passedCases), 'Passed Tests');
+
+  // 3. Failed Tests
+  const failedCases = allCases.filter(r => r[5] === 'FAIL');
+  XLSX.utils.book_append_sheet(wb, makeSheet(['Test ID', 'Suite', 'Module', 'Test Name', 'Priority', 'Status', 'Execution Time (s)'], failedCases.length > 0 ? failedCases : [['None', '-', '-', 'All tests passed', '-', '-', '-']]), 'Failed Tests');
+
+  // 4. Execution Metrics
+  const metrics = [
+    ['Metric', 'Value'],
+    ['Total Tests Executed', grandTotal],
+    ['Passed Tests', grandPass],
+    ['Failed Tests', grandFail],
+    ['Pass Percentage', `${grandPct}%`],
+    ['Appium Android Tests', aStats.total],
+    ['Selenium Web Tests', sStats.total],
+    ['Security Tests', secStats.total],
+    ['Performance Tests', pfTotal],
+    ['Timestamp', TIMESTAMP],
+    ['Build', `#${RUN_NUMBER}`]
+  ];
+  XLSX.utils.book_append_sheet(wb, makeSheet(['Metric', 'Value'], metrics.slice(1)), 'Execution Metrics');
+
+  // 5. Pass Rate Summary
+  const passRates = [
+    ['Suite', 'Total', 'Passed', 'Failed', 'Pass Rate'],
+    ['Appium Android', aStats.total, aStats.passed, aStats.failed, `${aStats.pct}%`],
+    ['Selenium Web', sStats.total, sStats.passed, sStats.failed, `${sStats.pct}%`],
+    ['Backend Security', secStats.total, secStats.passed, secStats.failed, `${secStats.pct}%`],
+    ['Performance Smoke', pfTotal, pfPass, pfTotal - pfPass, `${Math.round((pfPass/pfTotal)*100)}%`],
+    ['GRAND TOTAL', grandTotal, grandPass, grandFail, `${grandPct}%`]
+  ];
+  XLSX.utils.book_append_sheet(wb, makeSheet(['Suite', 'Total', 'Passed', 'Failed', 'Pass Rate'], passRates.slice(1)), 'Pass Rate Summary');
+
+  // Write Excel files
+  const mainXlsx = path.join(OUT_DIR, 'Automation_Test_Report.xlsx');
+  XLSX.writeFile(wb, mainXlsx);
+  XLSX.writeFile(wb, path.join(OUT_DIR, 'Execution_Summary.xlsx'));
+
+  // Separate Passed and Failed workbooks for enterprise audit requirements
+  const wbPassed = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wbPassed, makeSheet(['Test ID', 'Suite', 'Module', 'Test Name', 'Priority', 'Status', 'Execution Time (s)'], passedCases), 'Passed Tests');
+  XLSX.writeFile(wbPassed, path.join(OUT_DIR, 'Passed_Test_Cases.xlsx'));
+
+  const wbFailed = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wbFailed, makeSheet(['Test ID', 'Suite', 'Module', 'Test Name', 'Priority', 'Status', 'Execution Time (s)'], failedCases.length > 0 ? failedCases : [['None', '-', '-', 'All tests passed', '-', '-', '-']]), 'Failed Tests');
+  XLSX.writeFile(wbFailed, path.join(OUT_DIR, 'Failed_Test_Cases.xlsx'));
+
+  console.log(`✅ Excel Reports Generated:`);
+  console.log(`   - ${mainXlsx}`);
+  console.log(`   - ${path.join(OUT_DIR, 'Passed_Test_Cases.xlsx')}`);
+  console.log(`   - ${path.join(OUT_DIR, 'Failed_Test_Cases.xlsx')}`);
+  console.log(`   - ${path.join(OUT_DIR, 'Execution_Summary.xlsx')}`);
+} catch (err) {
+  console.warn('⚠️ Could not generate XLSX (xlsx package not found), CSV report is available:', err.message);
+}
+
 // ── Write JSON ────────────────────────────────────────────────────────────────
 const jsonReport = {
   build_number: RUN_NUMBER, timestamp: TIMESTAMP,
