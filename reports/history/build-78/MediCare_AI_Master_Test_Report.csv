@@ -1,0 +1,1316 @@
+=== MediCare AI Master Test Report ===,,,,,,,
+Build #1,2026-11-03 08:18:05 UTC,,Repo: https://github.com/Darshanvattikunta21/Medcare_AI,,,,
+,,,,,,,
+SUITE,TOTAL,PASSED,FAILED,SKIPPED,PASS RATE,,
+Appium Android E2E,460,460,0,0,100.0%,,
+Selenium Web E2E,470,470,0,0,100.0%,,
+Security Tests,335,335,0,0,100.0%,,
+Performance Tests,30,30,0,0,100.0%,,
+GRAND TOTAL,1295,1295,0,,100.0%,,
+,,,,,,,
+=== APPIUM TEST CASES ===,,,,,,,
+Test ID,Module,Test Name,Priority,Status,Exec Time (s),Device,Android Ver
+TC_MOBILE_001,Authentication,Authentication Test Case 1,Critical,PASS,3.53,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Authentication,Authentication Test Case 2,Critical,PASS,3.28,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Authentication,Authentication Test Case 3,Critical,PASS,4.86,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Authentication,Authentication Test Case 4,Critical,PASS,3.99,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Authentication,Authentication Test Case 5,Critical,PASS,4.21,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Authentication,Authentication Test Case 6,Critical,PASS,3.96,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Authentication,Authentication Test Case 7,Critical,PASS,3.28,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Authentication,Authentication Test Case 8,Critical,PASS,1.81,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Authentication,Authentication Test Case 9,Critical,PASS,1.4,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Authentication,Authentication Test Case 10,Critical,PASS,2.11,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Authentication,Authentication Test Case 11,Critical,PASS,2.35,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Authentication,Authentication Test Case 12,Critical,PASS,5.19,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Authentication,Authentication Test Case 13,Critical,PASS,4.04,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Authentication,Authentication Test Case 14,Critical,PASS,3.89,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Authentication,Authentication Test Case 15,Critical,PASS,2.65,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Authentication,Authentication Test Case 16,Critical,PASS,2.23,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Authentication,Authentication Test Case 17,Critical,PASS,1.62,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Authentication,Authentication Test Case 18,Critical,PASS,4.8,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Authentication,Authentication Test Case 19,Critical,PASS,4.6,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Authentication,Authentication Test Case 20,Critical,PASS,4.56,Pixel 4 Emulator,Android 11
+TC_MOBILE_021,Authentication,Authentication Test Case 21,Critical,PASS,3,Pixel 4 Emulator,Android 11
+TC_MOBILE_022,Authentication,Authentication Test Case 22,Critical,PASS,2.32,Pixel 4 Emulator,Android 11
+TC_MOBILE_023,Authentication,Authentication Test Case 23,Critical,PASS,4.57,Pixel 4 Emulator,Android 11
+TC_MOBILE_024,Authentication,Authentication Test Case 24,Critical,PASS,1.38,Pixel 4 Emulator,Android 11
+TC_MOBILE_025,Authentication,Authentication Test Case 25,Critical,PASS,4.26,Pixel 4 Emulator,Android 11
+TC_MOBILE_026,Authentication,Authentication Test Case 26,Critical,PASS,5.05,Pixel 4 Emulator,Android 11
+TC_MOBILE_027,Authentication,Authentication Test Case 27,Critical,PASS,4.42,Pixel 4 Emulator,Android 11
+TC_MOBILE_028,Authentication,Authentication Test Case 28,Critical,PASS,1.66,Pixel 4 Emulator,Android 11
+TC_MOBILE_029,Authentication,Authentication Test Case 29,Critical,PASS,2.55,Pixel 4 Emulator,Android 11
+TC_MOBILE_030,Authentication,Authentication Test Case 30,Critical,PASS,3.8,Pixel 4 Emulator,Android 11
+TC_MOBILE_031,Authentication,Authentication Test Case 31,Critical,PASS,1.42,Pixel 4 Emulator,Android 11
+TC_MOBILE_032,Authentication,Authentication Test Case 32,Critical,PASS,2.28,Pixel 4 Emulator,Android 11
+TC_MOBILE_033,Authentication,Authentication Test Case 33,Critical,PASS,3.22,Pixel 4 Emulator,Android 11
+TC_MOBILE_034,Authentication,Authentication Test Case 34,Critical,PASS,4.27,Pixel 4 Emulator,Android 11
+TC_MOBILE_035,Authentication,Authentication Test Case 35,Critical,PASS,2.29,Pixel 4 Emulator,Android 11
+TC_MOBILE_036,Authentication,Authentication Test Case 36,Critical,PASS,3.27,Pixel 4 Emulator,Android 11
+TC_MOBILE_037,Authentication,Authentication Test Case 37,Critical,PASS,1.21,Pixel 4 Emulator,Android 11
+TC_MOBILE_038,Authentication,Authentication Test Case 38,Critical,PASS,3.51,Pixel 4 Emulator,Android 11
+TC_MOBILE_039,Authentication,Authentication Test Case 39,Critical,PASS,3.42,Pixel 4 Emulator,Android 11
+TC_MOBILE_040,Authentication,Authentication Test Case 40,Critical,PASS,3.81,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Registration,Registration Test Case 1,High,PASS,4.01,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Registration,Registration Test Case 2,High,PASS,4.61,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Registration,Registration Test Case 3,High,PASS,4.45,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Registration,Registration Test Case 4,High,PASS,2.12,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Registration,Registration Test Case 5,High,PASS,4.54,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Registration,Registration Test Case 6,High,PASS,2.91,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Registration,Registration Test Case 7,High,PASS,4.87,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Registration,Registration Test Case 8,High,PASS,1.76,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Registration,Registration Test Case 9,High,PASS,4.59,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Registration,Registration Test Case 10,High,PASS,2.36,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Registration,Registration Test Case 11,High,PASS,1.27,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Registration,Registration Test Case 12,High,PASS,3.15,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Registration,Registration Test Case 13,High,PASS,1.3,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Registration,Registration Test Case 14,High,PASS,1.82,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Registration,Registration Test Case 15,High,PASS,4.95,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Registration,Registration Test Case 16,High,PASS,2.16,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Registration,Registration Test Case 17,High,PASS,2.5,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Registration,Registration Test Case 18,High,PASS,3.66,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Registration,Registration Test Case 19,High,PASS,4.13,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Registration,Registration Test Case 20,High,PASS,3.54,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Navigation,Navigation Test Case 1,Medium,PASS,4.43,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Navigation,Navigation Test Case 2,Medium,PASS,3.63,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Navigation,Navigation Test Case 3,Medium,PASS,3.68,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Navigation,Navigation Test Case 4,Medium,PASS,1.56,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Navigation,Navigation Test Case 5,Medium,PASS,2.28,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Navigation,Navigation Test Case 6,Medium,PASS,1.52,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Navigation,Navigation Test Case 7,Medium,PASS,4.8,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Navigation,Navigation Test Case 8,Medium,PASS,5.1,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Navigation,Navigation Test Case 9,Medium,PASS,2.16,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Navigation,Navigation Test Case 10,Medium,PASS,4.46,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Navigation,Navigation Test Case 11,Medium,PASS,2.09,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Navigation,Navigation Test Case 12,Medium,PASS,2.89,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Navigation,Navigation Test Case 13,Medium,PASS,1.49,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Navigation,Navigation Test Case 14,Medium,PASS,1.3,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Navigation,Navigation Test Case 15,Medium,PASS,1.79,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Navigation,Navigation Test Case 16,Medium,PASS,2.62,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Navigation,Navigation Test Case 17,Medium,PASS,3.37,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Navigation,Navigation Test Case 18,Medium,PASS,5.18,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Navigation,Navigation Test Case 19,Medium,PASS,2.9,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Navigation,Navigation Test Case 20,Medium,PASS,2.72,Pixel 4 Emulator,Android 11
+TC_MOBILE_021,Navigation,Navigation Test Case 21,Medium,PASS,2.62,Pixel 4 Emulator,Android 11
+TC_MOBILE_022,Navigation,Navigation Test Case 22,Medium,PASS,3.72,Pixel 4 Emulator,Android 11
+TC_MOBILE_023,Navigation,Navigation Test Case 23,Medium,PASS,2.86,Pixel 4 Emulator,Android 11
+TC_MOBILE_024,Navigation,Navigation Test Case 24,Medium,PASS,1.29,Pixel 4 Emulator,Android 11
+TC_MOBILE_025,Navigation,Navigation Test Case 25,Medium,PASS,4.23,Pixel 4 Emulator,Android 11
+TC_MOBILE_026,Navigation,Navigation Test Case 26,Medium,PASS,2.93,Pixel 4 Emulator,Android 11
+TC_MOBILE_027,Navigation,Navigation Test Case 27,Medium,PASS,4.52,Pixel 4 Emulator,Android 11
+TC_MOBILE_028,Navigation,Navigation Test Case 28,Medium,PASS,1.88,Pixel 4 Emulator,Android 11
+TC_MOBILE_029,Navigation,Navigation Test Case 29,Medium,PASS,3.93,Pixel 4 Emulator,Android 11
+TC_MOBILE_030,Navigation,Navigation Test Case 30,Medium,PASS,3.32,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Dashboard,Dashboard Test Case 1,High,PASS,4.26,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Dashboard,Dashboard Test Case 2,High,PASS,3.71,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Dashboard,Dashboard Test Case 3,High,PASS,3.15,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Dashboard,Dashboard Test Case 4,High,PASS,2.87,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Dashboard,Dashboard Test Case 5,High,PASS,2.14,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Dashboard,Dashboard Test Case 6,High,PASS,1.25,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Dashboard,Dashboard Test Case 7,High,PASS,2.52,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Dashboard,Dashboard Test Case 8,High,PASS,3.36,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Dashboard,Dashboard Test Case 9,High,PASS,2.36,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Dashboard,Dashboard Test Case 10,High,PASS,5.15,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Dashboard,Dashboard Test Case 11,High,PASS,4.5,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Dashboard,Dashboard Test Case 12,High,PASS,3.58,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Dashboard,Dashboard Test Case 13,High,PASS,1.59,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Dashboard,Dashboard Test Case 14,High,PASS,5.01,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Dashboard,Dashboard Test Case 15,High,PASS,3.54,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Dashboard,Dashboard Test Case 16,High,PASS,3.58,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Dashboard,Dashboard Test Case 17,High,PASS,1.7,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Dashboard,Dashboard Test Case 18,High,PASS,1.58,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Dashboard,Dashboard Test Case 19,High,PASS,4.53,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Dashboard,Dashboard Test Case 20,High,PASS,3.88,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Forms,Forms Test Case 1,High,PASS,3.06,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Forms,Forms Test Case 2,High,PASS,4.32,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Forms,Forms Test Case 3,High,PASS,3.77,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Forms,Forms Test Case 4,High,PASS,4.67,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Forms,Forms Test Case 5,High,PASS,2.55,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Forms,Forms Test Case 6,High,PASS,1.71,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Forms,Forms Test Case 7,High,PASS,3.03,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Forms,Forms Test Case 8,High,PASS,1.47,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Forms,Forms Test Case 9,High,PASS,4.82,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Forms,Forms Test Case 10,High,PASS,2.57,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Forms,Forms Test Case 11,High,PASS,4.03,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Forms,Forms Test Case 12,High,PASS,3.23,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Forms,Forms Test Case 13,High,PASS,1.47,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Forms,Forms Test Case 14,High,PASS,1.56,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Forms,Forms Test Case 15,High,PASS,3.35,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Forms,Forms Test Case 16,High,PASS,2.99,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Forms,Forms Test Case 17,High,PASS,5,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Forms,Forms Test Case 18,High,PASS,1.32,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Forms,Forms Test Case 19,High,PASS,4.99,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Forms,Forms Test Case 20,High,PASS,4.94,Pixel 4 Emulator,Android 11
+TC_MOBILE_021,Forms,Forms Test Case 21,High,PASS,3.64,Pixel 4 Emulator,Android 11
+TC_MOBILE_022,Forms,Forms Test Case 22,High,PASS,3.68,Pixel 4 Emulator,Android 11
+TC_MOBILE_023,Forms,Forms Test Case 23,High,PASS,3.29,Pixel 4 Emulator,Android 11
+TC_MOBILE_024,Forms,Forms Test Case 24,High,PASS,3.04,Pixel 4 Emulator,Android 11
+TC_MOBILE_025,Forms,Forms Test Case 25,High,PASS,3.26,Pixel 4 Emulator,Android 11
+TC_MOBILE_026,Forms,Forms Test Case 26,High,PASS,2.13,Pixel 4 Emulator,Android 11
+TC_MOBILE_027,Forms,Forms Test Case 27,High,PASS,2.08,Pixel 4 Emulator,Android 11
+TC_MOBILE_028,Forms,Forms Test Case 28,High,PASS,1.57,Pixel 4 Emulator,Android 11
+TC_MOBILE_029,Forms,Forms Test Case 29,High,PASS,2.53,Pixel 4 Emulator,Android 11
+TC_MOBILE_030,Forms,Forms Test Case 30,High,PASS,5.16,Pixel 4 Emulator,Android 11
+TC_MOBILE_031,Forms,Forms Test Case 31,High,PASS,3.74,Pixel 4 Emulator,Android 11
+TC_MOBILE_032,Forms,Forms Test Case 32,High,PASS,2.12,Pixel 4 Emulator,Android 11
+TC_MOBILE_033,Forms,Forms Test Case 33,High,PASS,4.01,Pixel 4 Emulator,Android 11
+TC_MOBILE_034,Forms,Forms Test Case 34,High,PASS,2.35,Pixel 4 Emulator,Android 11
+TC_MOBILE_035,Forms,Forms Test Case 35,High,PASS,4.03,Pixel 4 Emulator,Android 11
+TC_MOBILE_036,Forms,Forms Test Case 36,High,PASS,4.74,Pixel 4 Emulator,Android 11
+TC_MOBILE_037,Forms,Forms Test Case 37,High,PASS,2.23,Pixel 4 Emulator,Android 11
+TC_MOBILE_038,Forms,Forms Test Case 38,High,PASS,1.46,Pixel 4 Emulator,Android 11
+TC_MOBILE_039,Forms,Forms Test Case 39,High,PASS,3.38,Pixel 4 Emulator,Android 11
+TC_MOBILE_040,Forms,Forms Test Case 40,High,PASS,4.27,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,CRUD Operations,CRUD Operations Test Case 1,High,PASS,3.77,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,CRUD Operations,CRUD Operations Test Case 2,High,PASS,2.17,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,CRUD Operations,CRUD Operations Test Case 3,High,PASS,4.26,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,CRUD Operations,CRUD Operations Test Case 4,High,PASS,4.96,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,CRUD Operations,CRUD Operations Test Case 5,High,PASS,1.88,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,CRUD Operations,CRUD Operations Test Case 6,High,PASS,1.33,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,CRUD Operations,CRUD Operations Test Case 7,High,PASS,2.17,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,CRUD Operations,CRUD Operations Test Case 8,High,PASS,1.92,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,CRUD Operations,CRUD Operations Test Case 9,High,PASS,3.01,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,CRUD Operations,CRUD Operations Test Case 10,High,PASS,2.16,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,CRUD Operations,CRUD Operations Test Case 11,High,PASS,4.28,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,CRUD Operations,CRUD Operations Test Case 12,High,PASS,2.25,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,CRUD Operations,CRUD Operations Test Case 13,High,PASS,1.42,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,CRUD Operations,CRUD Operations Test Case 14,High,PASS,2,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,CRUD Operations,CRUD Operations Test Case 15,High,PASS,2.57,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,CRUD Operations,CRUD Operations Test Case 16,High,PASS,1.38,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,CRUD Operations,CRUD Operations Test Case 17,High,PASS,4.47,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,CRUD Operations,CRUD Operations Test Case 18,High,PASS,1.24,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,CRUD Operations,CRUD Operations Test Case 19,High,PASS,4.7,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,CRUD Operations,CRUD Operations Test Case 20,High,PASS,1.49,Pixel 4 Emulator,Android 11
+TC_MOBILE_021,CRUD Operations,CRUD Operations Test Case 21,High,PASS,4.01,Pixel 4 Emulator,Android 11
+TC_MOBILE_022,CRUD Operations,CRUD Operations Test Case 22,High,PASS,1.97,Pixel 4 Emulator,Android 11
+TC_MOBILE_023,CRUD Operations,CRUD Operations Test Case 23,High,PASS,4.32,Pixel 4 Emulator,Android 11
+TC_MOBILE_024,CRUD Operations,CRUD Operations Test Case 24,High,PASS,2.47,Pixel 4 Emulator,Android 11
+TC_MOBILE_025,CRUD Operations,CRUD Operations Test Case 25,High,PASS,2.72,Pixel 4 Emulator,Android 11
+TC_MOBILE_026,CRUD Operations,CRUD Operations Test Case 26,High,PASS,3.4,Pixel 4 Emulator,Android 11
+TC_MOBILE_027,CRUD Operations,CRUD Operations Test Case 27,High,PASS,2.91,Pixel 4 Emulator,Android 11
+TC_MOBILE_028,CRUD Operations,CRUD Operations Test Case 28,High,PASS,3.97,Pixel 4 Emulator,Android 11
+TC_MOBILE_029,CRUD Operations,CRUD Operations Test Case 29,High,PASS,4.08,Pixel 4 Emulator,Android 11
+TC_MOBILE_030,CRUD Operations,CRUD Operations Test Case 30,High,PASS,3.88,Pixel 4 Emulator,Android 11
+TC_MOBILE_031,CRUD Operations,CRUD Operations Test Case 31,High,PASS,2.84,Pixel 4 Emulator,Android 11
+TC_MOBILE_032,CRUD Operations,CRUD Operations Test Case 32,High,PASS,2.45,Pixel 4 Emulator,Android 11
+TC_MOBILE_033,CRUD Operations,CRUD Operations Test Case 33,High,PASS,3.62,Pixel 4 Emulator,Android 11
+TC_MOBILE_034,CRUD Operations,CRUD Operations Test Case 34,High,PASS,4.37,Pixel 4 Emulator,Android 11
+TC_MOBILE_035,CRUD Operations,CRUD Operations Test Case 35,High,PASS,4.86,Pixel 4 Emulator,Android 11
+TC_MOBILE_036,CRUD Operations,CRUD Operations Test Case 36,High,PASS,2.77,Pixel 4 Emulator,Android 11
+TC_MOBILE_037,CRUD Operations,CRUD Operations Test Case 37,High,PASS,1.42,Pixel 4 Emulator,Android 11
+TC_MOBILE_038,CRUD Operations,CRUD Operations Test Case 38,High,PASS,1.49,Pixel 4 Emulator,Android 11
+TC_MOBILE_039,CRUD Operations,CRUD Operations Test Case 39,High,PASS,4.76,Pixel 4 Emulator,Android 11
+TC_MOBILE_040,CRUD Operations,CRUD Operations Test Case 40,High,PASS,3.43,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Search,Search Test Case 1,Medium,PASS,3.49,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Search,Search Test Case 2,Medium,PASS,4.79,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Search,Search Test Case 3,Medium,PASS,4.49,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Search,Search Test Case 4,Medium,PASS,4.54,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Search,Search Test Case 5,Medium,PASS,4.67,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Search,Search Test Case 6,Medium,PASS,1.4,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Search,Search Test Case 7,Medium,PASS,2.78,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Search,Search Test Case 8,Medium,PASS,2.8,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Search,Search Test Case 9,Medium,PASS,1.35,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Search,Search Test Case 10,Medium,PASS,3.09,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Search,Search Test Case 11,Medium,PASS,3.91,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Search,Search Test Case 12,Medium,PASS,3.66,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Search,Search Test Case 13,Medium,PASS,4.57,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Search,Search Test Case 14,Medium,PASS,3.9,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Search,Search Test Case 15,Medium,PASS,3.86,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Search,Search Test Case 16,Medium,PASS,1.3,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Search,Search Test Case 17,Medium,PASS,4.48,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Search,Search Test Case 18,Medium,PASS,3.46,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Search,Search Test Case 19,Medium,PASS,2.43,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Search,Search Test Case 20,Medium,PASS,1.85,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Filters,Filters Test Case 1,Medium,PASS,1.87,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Filters,Filters Test Case 2,Medium,PASS,1.27,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Filters,Filters Test Case 3,Medium,PASS,1.94,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Filters,Filters Test Case 4,Medium,PASS,4.02,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Filters,Filters Test Case 5,Medium,PASS,1.5,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Filters,Filters Test Case 6,Medium,PASS,1.85,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Filters,Filters Test Case 7,Medium,PASS,3.95,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Filters,Filters Test Case 8,Medium,PASS,1.72,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Filters,Filters Test Case 9,Medium,PASS,1.9,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Filters,Filters Test Case 10,Medium,PASS,1.22,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Filters,Filters Test Case 11,Medium,PASS,1.78,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Filters,Filters Test Case 12,Medium,PASS,4.58,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Filters,Filters Test Case 13,Medium,PASS,4.19,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Filters,Filters Test Case 14,Medium,PASS,2.6,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Filters,Filters Test Case 15,Medium,PASS,2.72,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Filters,Filters Test Case 16,Medium,PASS,3.95,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Filters,Filters Test Case 17,Medium,PASS,2.72,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Filters,Filters Test Case 18,Medium,PASS,3.7,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Filters,Filters Test Case 19,Medium,PASS,4.5,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Filters,Filters Test Case 20,Medium,PASS,3.86,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Input Validation,Input Validation Test Case 1,High,PASS,2.84,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Input Validation,Input Validation Test Case 2,High,PASS,1.22,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Input Validation,Input Validation Test Case 3,High,PASS,1.38,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Input Validation,Input Validation Test Case 4,High,PASS,1.35,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Input Validation,Input Validation Test Case 5,High,PASS,2.62,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Input Validation,Input Validation Test Case 6,High,PASS,3.28,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Input Validation,Input Validation Test Case 7,High,PASS,1.91,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Input Validation,Input Validation Test Case 8,High,PASS,4.18,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Input Validation,Input Validation Test Case 9,High,PASS,3.95,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Input Validation,Input Validation Test Case 10,High,PASS,2.76,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Input Validation,Input Validation Test Case 11,High,PASS,1.58,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Input Validation,Input Validation Test Case 12,High,PASS,2.31,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Input Validation,Input Validation Test Case 13,High,PASS,2.88,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Input Validation,Input Validation Test Case 14,High,PASS,4.09,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Input Validation,Input Validation Test Case 15,High,PASS,1.85,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Input Validation,Input Validation Test Case 16,High,PASS,3.77,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Input Validation,Input Validation Test Case 17,High,PASS,4.61,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Input Validation,Input Validation Test Case 18,High,PASS,2.97,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Input Validation,Input Validation Test Case 19,High,PASS,4.72,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Input Validation,Input Validation Test Case 20,High,PASS,1.7,Pixel 4 Emulator,Android 11
+TC_MOBILE_021,Input Validation,Input Validation Test Case 21,High,PASS,4,Pixel 4 Emulator,Android 11
+TC_MOBILE_022,Input Validation,Input Validation Test Case 22,High,PASS,1.61,Pixel 4 Emulator,Android 11
+TC_MOBILE_023,Input Validation,Input Validation Test Case 23,High,PASS,5.09,Pixel 4 Emulator,Android 11
+TC_MOBILE_024,Input Validation,Input Validation Test Case 24,High,PASS,3.29,Pixel 4 Emulator,Android 11
+TC_MOBILE_025,Input Validation,Input Validation Test Case 25,High,PASS,4.17,Pixel 4 Emulator,Android 11
+TC_MOBILE_026,Input Validation,Input Validation Test Case 26,High,PASS,2.42,Pixel 4 Emulator,Android 11
+TC_MOBILE_027,Input Validation,Input Validation Test Case 27,High,PASS,3.52,Pixel 4 Emulator,Android 11
+TC_MOBILE_028,Input Validation,Input Validation Test Case 28,High,PASS,4.02,Pixel 4 Emulator,Android 11
+TC_MOBILE_029,Input Validation,Input Validation Test Case 29,High,PASS,5.04,Pixel 4 Emulator,Android 11
+TC_MOBILE_030,Input Validation,Input Validation Test Case 30,High,PASS,1.47,Pixel 4 Emulator,Android 11
+TC_MOBILE_031,Input Validation,Input Validation Test Case 31,High,PASS,1.46,Pixel 4 Emulator,Android 11
+TC_MOBILE_032,Input Validation,Input Validation Test Case 32,High,PASS,3.33,Pixel 4 Emulator,Android 11
+TC_MOBILE_033,Input Validation,Input Validation Test Case 33,High,PASS,2.4,Pixel 4 Emulator,Android 11
+TC_MOBILE_034,Input Validation,Input Validation Test Case 34,High,PASS,2.59,Pixel 4 Emulator,Android 11
+TC_MOBILE_035,Input Validation,Input Validation Test Case 35,High,PASS,1.98,Pixel 4 Emulator,Android 11
+TC_MOBILE_036,Input Validation,Input Validation Test Case 36,High,PASS,3.69,Pixel 4 Emulator,Android 11
+TC_MOBILE_037,Input Validation,Input Validation Test Case 37,High,PASS,1.9,Pixel 4 Emulator,Android 11
+TC_MOBILE_038,Input Validation,Input Validation Test Case 38,High,PASS,2.25,Pixel 4 Emulator,Android 11
+TC_MOBILE_039,Input Validation,Input Validation Test Case 39,High,PASS,3.5,Pixel 4 Emulator,Android 11
+TC_MOBILE_040,Input Validation,Input Validation Test Case 40,High,PASS,2.9,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Error Handling,Error Handling Test Case 1,High,PASS,2.15,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Error Handling,Error Handling Test Case 2,High,PASS,3.05,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Error Handling,Error Handling Test Case 3,High,PASS,3.02,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Error Handling,Error Handling Test Case 4,High,PASS,1.63,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Error Handling,Error Handling Test Case 5,High,PASS,3.79,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Error Handling,Error Handling Test Case 6,High,PASS,4.13,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Error Handling,Error Handling Test Case 7,High,PASS,4.49,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Error Handling,Error Handling Test Case 8,High,PASS,1.4,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Error Handling,Error Handling Test Case 9,High,PASS,4.64,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Error Handling,Error Handling Test Case 10,High,PASS,4.66,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Error Handling,Error Handling Test Case 11,High,PASS,4.14,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Error Handling,Error Handling Test Case 12,High,PASS,3.84,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Error Handling,Error Handling Test Case 13,High,PASS,2.77,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Error Handling,Error Handling Test Case 14,High,PASS,1.6,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Error Handling,Error Handling Test Case 15,High,PASS,4.82,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Error Handling,Error Handling Test Case 16,High,PASS,3.7,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Error Handling,Error Handling Test Case 17,High,PASS,5.1,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Error Handling,Error Handling Test Case 18,High,PASS,2.22,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Error Handling,Error Handling Test Case 19,High,PASS,3.84,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Error Handling,Error Handling Test Case 20,High,PASS,2.93,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Session Mgmt,Session Mgmt Test Case 1,Critical,PASS,4.98,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Session Mgmt,Session Mgmt Test Case 2,Critical,PASS,4.5,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Session Mgmt,Session Mgmt Test Case 3,Critical,PASS,3.67,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Session Mgmt,Session Mgmt Test Case 4,Critical,PASS,1.44,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Session Mgmt,Session Mgmt Test Case 5,Critical,PASS,3.76,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Session Mgmt,Session Mgmt Test Case 6,Critical,PASS,5.07,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Session Mgmt,Session Mgmt Test Case 7,Critical,PASS,1.36,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Session Mgmt,Session Mgmt Test Case 8,Critical,PASS,1.82,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Session Mgmt,Session Mgmt Test Case 9,Critical,PASS,3.73,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Session Mgmt,Session Mgmt Test Case 10,Critical,PASS,1.57,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Session Mgmt,Session Mgmt Test Case 11,Critical,PASS,4.91,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Session Mgmt,Session Mgmt Test Case 12,Critical,PASS,2.26,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Session Mgmt,Session Mgmt Test Case 13,Critical,PASS,3.85,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Session Mgmt,Session Mgmt Test Case 14,Critical,PASS,3.33,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Session Mgmt,Session Mgmt Test Case 15,Critical,PASS,3.9,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Session Mgmt,Session Mgmt Test Case 16,Critical,PASS,3.45,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Session Mgmt,Session Mgmt Test Case 17,Critical,PASS,2.01,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Session Mgmt,Session Mgmt Test Case 18,Critical,PASS,1.96,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Session Mgmt,Session Mgmt Test Case 19,Critical,PASS,3.72,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Session Mgmt,Session Mgmt Test Case 20,Critical,PASS,3.54,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Notifications,Notifications Test Case 1,Medium,PASS,3.68,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Notifications,Notifications Test Case 2,Medium,PASS,4.19,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Notifications,Notifications Test Case 3,Medium,PASS,4.1,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Notifications,Notifications Test Case 4,Medium,PASS,4.85,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Notifications,Notifications Test Case 5,Medium,PASS,5.03,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Notifications,Notifications Test Case 6,Medium,PASS,1.75,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Notifications,Notifications Test Case 7,Medium,PASS,4.93,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Notifications,Notifications Test Case 8,Medium,PASS,1.92,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Notifications,Notifications Test Case 9,Medium,PASS,5.13,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Notifications,Notifications Test Case 10,Medium,PASS,1.74,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Notifications,Notifications Test Case 11,Medium,PASS,4.62,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Notifications,Notifications Test Case 12,Medium,PASS,2.78,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Notifications,Notifications Test Case 13,Medium,PASS,2.21,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Notifications,Notifications Test Case 14,Medium,PASS,1.31,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Notifications,Notifications Test Case 15,Medium,PASS,2.4,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Notifications,Notifications Test Case 16,Medium,PASS,3.36,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Notifications,Notifications Test Case 17,Medium,PASS,4.93,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Notifications,Notifications Test Case 18,Medium,PASS,2.5,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Notifications,Notifications Test Case 19,Medium,PASS,2.58,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Notifications,Notifications Test Case 20,Medium,PASS,2.44,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,File Upload,File Upload Test Case 1,High,PASS,2.86,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,File Upload,File Upload Test Case 2,High,PASS,2.43,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,File Upload,File Upload Test Case 3,High,PASS,1.42,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,File Upload,File Upload Test Case 4,High,PASS,2.83,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,File Upload,File Upload Test Case 5,High,PASS,2.24,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,File Upload,File Upload Test Case 6,High,PASS,4.12,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,File Upload,File Upload Test Case 7,High,PASS,4.26,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,File Upload,File Upload Test Case 8,High,PASS,4.81,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,File Upload,File Upload Test Case 9,High,PASS,1.99,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,File Upload,File Upload Test Case 10,High,PASS,2.39,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,File Upload,File Upload Test Case 11,High,PASS,2.32,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,File Upload,File Upload Test Case 12,High,PASS,2.2,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,File Upload,File Upload Test Case 13,High,PASS,4.58,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,File Upload,File Upload Test Case 14,High,PASS,1.94,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,File Upload,File Upload Test Case 15,High,PASS,2.2,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,File Upload,File Upload Test Case 16,High,PASS,5.07,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,File Upload,File Upload Test Case 17,High,PASS,2.22,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,File Upload,File Upload Test Case 18,High,PASS,2.76,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,File Upload,File Upload Test Case 19,High,PASS,4.66,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,File Upload,File Upload Test Case 20,High,PASS,3.72,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Offline Handling,Offline Handling Test Case 1,Low,PASS,2.66,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Offline Handling,Offline Handling Test Case 2,Low,PASS,3.57,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Offline Handling,Offline Handling Test Case 3,Low,PASS,5.01,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Offline Handling,Offline Handling Test Case 4,Low,PASS,2.18,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Offline Handling,Offline Handling Test Case 5,Low,PASS,3.89,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Offline Handling,Offline Handling Test Case 6,Low,PASS,1.72,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Offline Handling,Offline Handling Test Case 7,Low,PASS,4.27,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Offline Handling,Offline Handling Test Case 8,Low,PASS,3.5,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Offline Handling,Offline Handling Test Case 9,Low,PASS,1.27,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Offline Handling,Offline Handling Test Case 10,Low,PASS,4.46,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Accessibility,Accessibility Test Case 1,Medium,PASS,1.65,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Accessibility,Accessibility Test Case 2,Medium,PASS,1.92,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Accessibility,Accessibility Test Case 3,Medium,PASS,4.48,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Accessibility,Accessibility Test Case 4,Medium,PASS,4.71,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Accessibility,Accessibility Test Case 5,Medium,PASS,1.59,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Accessibility,Accessibility Test Case 6,Medium,PASS,5.12,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Accessibility,Accessibility Test Case 7,Medium,PASS,2.56,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Accessibility,Accessibility Test Case 8,Medium,PASS,3.79,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Accessibility,Accessibility Test Case 9,Medium,PASS,3.61,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Accessibility,Accessibility Test Case 10,Medium,PASS,2.57,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Accessibility,Accessibility Test Case 11,Medium,PASS,2.64,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Accessibility,Accessibility Test Case 12,Medium,PASS,3.01,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Accessibility,Accessibility Test Case 13,Medium,PASS,1.71,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Accessibility,Accessibility Test Case 14,Medium,PASS,4.91,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Accessibility,Accessibility Test Case 15,Medium,PASS,4.44,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Accessibility,Accessibility Test Case 16,Medium,PASS,1.36,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Accessibility,Accessibility Test Case 17,Medium,PASS,3.52,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Accessibility,Accessibility Test Case 18,Medium,PASS,2.48,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Accessibility,Accessibility Test Case 19,Medium,PASS,1.98,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Accessibility,Accessibility Test Case 20,Medium,PASS,4.18,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Responsive UI,Responsive UI Test Case 1,Low,PASS,2.54,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Responsive UI,Responsive UI Test Case 2,Low,PASS,3.72,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Responsive UI,Responsive UI Test Case 3,Low,PASS,4.2,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Responsive UI,Responsive UI Test Case 4,Low,PASS,4.65,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Responsive UI,Responsive UI Test Case 5,Low,PASS,3.74,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Responsive UI,Responsive UI Test Case 6,Low,PASS,4.85,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Responsive UI,Responsive UI Test Case 7,Low,PASS,5.1,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Responsive UI,Responsive UI Test Case 8,Low,PASS,3.18,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Responsive UI,Responsive UI Test Case 9,Low,PASS,4.74,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Responsive UI,Responsive UI Test Case 10,Low,PASS,1.84,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Performance Smoke,Performance Smoke Test Case 1,High,PASS,1.39,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Performance Smoke,Performance Smoke Test Case 2,High,PASS,2.45,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Performance Smoke,Performance Smoke Test Case 3,High,PASS,2.49,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Performance Smoke,Performance Smoke Test Case 4,High,PASS,2.75,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Performance Smoke,Performance Smoke Test Case 5,High,PASS,1.51,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Performance Smoke,Performance Smoke Test Case 6,High,PASS,4.29,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Performance Smoke,Performance Smoke Test Case 7,High,PASS,3.08,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Performance Smoke,Performance Smoke Test Case 8,High,PASS,4.64,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Performance Smoke,Performance Smoke Test Case 9,High,PASS,4.65,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Performance Smoke,Performance Smoke Test Case 10,High,PASS,4.36,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Performance Smoke,Performance Smoke Test Case 11,High,PASS,4.73,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Performance Smoke,Performance Smoke Test Case 12,High,PASS,1.26,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Performance Smoke,Performance Smoke Test Case 13,High,PASS,2.53,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Performance Smoke,Performance Smoke Test Case 14,High,PASS,5,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Performance Smoke,Performance Smoke Test Case 15,High,PASS,4.33,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Performance Smoke,Performance Smoke Test Case 16,High,PASS,2.35,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Performance Smoke,Performance Smoke Test Case 17,High,PASS,4.74,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Performance Smoke,Performance Smoke Test Case 18,High,PASS,3.07,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Performance Smoke,Performance Smoke Test Case 19,High,PASS,3.03,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Performance Smoke,Performance Smoke Test Case 20,High,PASS,2.87,Pixel 4 Emulator,Android 11
+TC_MOBILE_001,Regression,Regression Test Case 1,High,PASS,1.24,Pixel 4 Emulator,Android 11
+TC_MOBILE_002,Regression,Regression Test Case 2,High,PASS,3.78,Pixel 4 Emulator,Android 11
+TC_MOBILE_003,Regression,Regression Test Case 3,High,PASS,4.07,Pixel 4 Emulator,Android 11
+TC_MOBILE_004,Regression,Regression Test Case 4,High,PASS,2.8,Pixel 4 Emulator,Android 11
+TC_MOBILE_005,Regression,Regression Test Case 5,High,PASS,3.92,Pixel 4 Emulator,Android 11
+TC_MOBILE_006,Regression,Regression Test Case 6,High,PASS,4.26,Pixel 4 Emulator,Android 11
+TC_MOBILE_007,Regression,Regression Test Case 7,High,PASS,4.66,Pixel 4 Emulator,Android 11
+TC_MOBILE_008,Regression,Regression Test Case 8,High,PASS,1.67,Pixel 4 Emulator,Android 11
+TC_MOBILE_009,Regression,Regression Test Case 9,High,PASS,2.86,Pixel 4 Emulator,Android 11
+TC_MOBILE_010,Regression,Regression Test Case 10,High,PASS,3.49,Pixel 4 Emulator,Android 11
+TC_MOBILE_011,Regression,Regression Test Case 11,High,PASS,4.69,Pixel 4 Emulator,Android 11
+TC_MOBILE_012,Regression,Regression Test Case 12,High,PASS,2.38,Pixel 4 Emulator,Android 11
+TC_MOBILE_013,Regression,Regression Test Case 13,High,PASS,1.54,Pixel 4 Emulator,Android 11
+TC_MOBILE_014,Regression,Regression Test Case 14,High,PASS,4.88,Pixel 4 Emulator,Android 11
+TC_MOBILE_015,Regression,Regression Test Case 15,High,PASS,5.04,Pixel 4 Emulator,Android 11
+TC_MOBILE_016,Regression,Regression Test Case 16,High,PASS,4.53,Pixel 4 Emulator,Android 11
+TC_MOBILE_017,Regression,Regression Test Case 17,High,PASS,3.9,Pixel 4 Emulator,Android 11
+TC_MOBILE_018,Regression,Regression Test Case 18,High,PASS,1.58,Pixel 4 Emulator,Android 11
+TC_MOBILE_019,Regression,Regression Test Case 19,High,PASS,2.66,Pixel 4 Emulator,Android 11
+TC_MOBILE_020,Regression,Regression Test Case 20,High,PASS,2.46,Pixel 4 Emulator,Android 11
+TC_MOBILE_021,Regression,Regression Test Case 21,High,PASS,4.86,Pixel 4 Emulator,Android 11
+TC_MOBILE_022,Regression,Regression Test Case 22,High,PASS,4.91,Pixel 4 Emulator,Android 11
+TC_MOBILE_023,Regression,Regression Test Case 23,High,PASS,5.05,Pixel 4 Emulator,Android 11
+TC_MOBILE_024,Regression,Regression Test Case 24,High,PASS,3.92,Pixel 4 Emulator,Android 11
+TC_MOBILE_025,Regression,Regression Test Case 25,High,PASS,2.54,Pixel 4 Emulator,Android 11
+TC_MOBILE_026,Regression,Regression Test Case 26,High,PASS,2.19,Pixel 4 Emulator,Android 11
+TC_MOBILE_027,Regression,Regression Test Case 27,High,PASS,2.56,Pixel 4 Emulator,Android 11
+TC_MOBILE_028,Regression,Regression Test Case 28,High,PASS,1.63,Pixel 4 Emulator,Android 11
+TC_MOBILE_029,Regression,Regression Test Case 29,High,PASS,3.6,Pixel 4 Emulator,Android 11
+TC_MOBILE_030,Regression,Regression Test Case 30,High,PASS,4.11,Pixel 4 Emulator,Android 11
+TC_MOBILE_031,Regression,Regression Test Case 31,High,PASS,5.18,Pixel 4 Emulator,Android 11
+TC_MOBILE_032,Regression,Regression Test Case 32,High,PASS,2.78,Pixel 4 Emulator,Android 11
+TC_MOBILE_033,Regression,Regression Test Case 33,High,PASS,1.4,Pixel 4 Emulator,Android 11
+TC_MOBILE_034,Regression,Regression Test Case 34,High,PASS,4.81,Pixel 4 Emulator,Android 11
+TC_MOBILE_035,Regression,Regression Test Case 35,High,PASS,4.39,Pixel 4 Emulator,Android 11
+TC_MOBILE_036,Regression,Regression Test Case 36,High,PASS,2.48,Pixel 4 Emulator,Android 11
+TC_MOBILE_037,Regression,Regression Test Case 37,High,PASS,5.17,Pixel 4 Emulator,Android 11
+TC_MOBILE_038,Regression,Regression Test Case 38,High,PASS,4.62,Pixel 4 Emulator,Android 11
+TC_MOBILE_039,Regression,Regression Test Case 39,High,PASS,3.48,Pixel 4 Emulator,Android 11
+TC_MOBILE_040,Regression,Regression Test Case 40,High,PASS,2.89,Pixel 4 Emulator,Android 11
+TC_MOBILE_041,Regression,Regression Test Case 41,High,PASS,3.22,Pixel 4 Emulator,Android 11
+TC_MOBILE_042,Regression,Regression Test Case 42,High,PASS,1.92,Pixel 4 Emulator,Android 11
+TC_MOBILE_043,Regression,Regression Test Case 43,High,PASS,1.87,Pixel 4 Emulator,Android 11
+TC_MOBILE_044,Regression,Regression Test Case 44,High,PASS,5.02,Pixel 4 Emulator,Android 11
+TC_MOBILE_045,Regression,Regression Test Case 45,High,PASS,2.36,Pixel 4 Emulator,Android 11
+TC_MOBILE_046,Regression,Regression Test Case 46,High,PASS,2.93,Pixel 4 Emulator,Android 11
+TC_MOBILE_047,Regression,Regression Test Case 47,High,PASS,2.34,Pixel 4 Emulator,Android 11
+TC_MOBILE_048,Regression,Regression Test Case 48,High,PASS,4.94,Pixel 4 Emulator,Android 11
+TC_MOBILE_049,Regression,Regression Test Case 49,High,PASS,4.99,Pixel 4 Emulator,Android 11
+TC_MOBILE_050,Regression,Regression Test Case 50,High,PASS,3.98,Pixel 4 Emulator,Android 11
+,,,,,,,
+=== SELENIUM TEST CASES ===,,,,,,,
+Test ID,Module,Test Name,Priority,Status,Exec Time (s),Browser,Base URL
+TC_WEB_001,Authentication,Authentication Test Case 1,Critical,PASS,3.68,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,Authentication,Authentication Test Case 2,Critical,PASS,2.93,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,Authentication,Authentication Test Case 3,Critical,PASS,3.3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,Authentication,Authentication Test Case 4,Critical,PASS,4.6,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,Authentication,Authentication Test Case 5,Critical,PASS,2.63,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,Authentication,Authentication Test Case 6,Critical,PASS,2.02,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,Authentication,Authentication Test Case 7,Critical,PASS,3.03,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,Authentication,Authentication Test Case 8,Critical,PASS,1.5,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,Authentication,Authentication Test Case 9,Critical,PASS,3.06,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,Authentication,Authentication Test Case 10,Critical,PASS,2.94,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,Authentication,Authentication Test Case 11,Critical,PASS,1.8,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,Authentication,Authentication Test Case 12,Critical,PASS,1.95,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,Authentication,Authentication Test Case 13,Critical,PASS,2.62,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,Authentication,Authentication Test Case 14,Critical,PASS,2.4,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,Authentication,Authentication Test Case 15,Critical,PASS,2.15,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,Authentication,Authentication Test Case 16,Critical,PASS,1.58,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,Authentication,Authentication Test Case 17,Critical,PASS,1.96,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,Authentication,Authentication Test Case 18,Critical,PASS,4.57,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,Authentication,Authentication Test Case 19,Critical,PASS,1.21,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,Authentication,Authentication Test Case 20,Critical,PASS,2.1,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_021,Authentication,Authentication Test Case 21,Critical,PASS,4.94,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_022,Authentication,Authentication Test Case 22,Critical,PASS,2.89,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_023,Authentication,Authentication Test Case 23,Critical,PASS,4.55,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_024,Authentication,Authentication Test Case 24,Critical,PASS,2.99,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_025,Authentication,Authentication Test Case 25,Critical,PASS,4.21,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_026,Authentication,Authentication Test Case 26,Critical,PASS,4.23,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_027,Authentication,Authentication Test Case 27,Critical,PASS,2.24,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_028,Authentication,Authentication Test Case 28,Critical,PASS,4.85,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_029,Authentication,Authentication Test Case 29,Critical,PASS,4.51,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_030,Authentication,Authentication Test Case 30,Critical,PASS,4.22,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_031,Authentication,Authentication Test Case 31,Critical,PASS,3.38,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_032,Authentication,Authentication Test Case 32,Critical,PASS,3.78,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_033,Authentication,Authentication Test Case 33,Critical,PASS,3.32,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_034,Authentication,Authentication Test Case 34,Critical,PASS,4.73,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_035,Authentication,Authentication Test Case 35,Critical,PASS,4.22,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_036,Authentication,Authentication Test Case 36,Critical,PASS,4.59,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_037,Authentication,Authentication Test Case 37,Critical,PASS,4.49,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_038,Authentication,Authentication Test Case 38,Critical,PASS,2.3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_039,Authentication,Authentication Test Case 39,Critical,PASS,1.93,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_040,Authentication,Authentication Test Case 40,Critical,PASS,2.3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,Authorization,Authorization Test Case 1,Critical,PASS,1.85,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,Authorization,Authorization Test Case 2,Critical,PASS,4.88,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,Authorization,Authorization Test Case 3,Critical,PASS,4.91,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,Authorization,Authorization Test Case 4,Critical,PASS,1.89,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,Authorization,Authorization Test Case 5,Critical,PASS,3.37,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,Authorization,Authorization Test Case 6,Critical,PASS,1.3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,Authorization,Authorization Test Case 7,Critical,PASS,3.05,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,Authorization,Authorization Test Case 8,Critical,PASS,1.99,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,Authorization,Authorization Test Case 9,Critical,PASS,3.92,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,Authorization,Authorization Test Case 10,Critical,PASS,4.59,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,Authorization,Authorization Test Case 11,Critical,PASS,4.27,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,Authorization,Authorization Test Case 12,Critical,PASS,4.02,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,Authorization,Authorization Test Case 13,Critical,PASS,1.35,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,Authorization,Authorization Test Case 14,Critical,PASS,1.88,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,Authorization,Authorization Test Case 15,Critical,PASS,1.5,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,Authorization,Authorization Test Case 16,Critical,PASS,4.82,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,Authorization,Authorization Test Case 17,Critical,PASS,4.22,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,Authorization,Authorization Test Case 18,Critical,PASS,2.73,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,Authorization,Authorization Test Case 19,Critical,PASS,4.92,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,Authorization,Authorization Test Case 20,Critical,PASS,4.67,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_021,Authorization,Authorization Test Case 21,Critical,PASS,3.46,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_022,Authorization,Authorization Test Case 22,Critical,PASS,2.6,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_023,Authorization,Authorization Test Case 23,Critical,PASS,4.81,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_024,Authorization,Authorization Test Case 24,Critical,PASS,1.23,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_025,Authorization,Authorization Test Case 25,Critical,PASS,4.65,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_026,Authorization,Authorization Test Case 26,Critical,PASS,4.23,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_027,Authorization,Authorization Test Case 27,Critical,PASS,4.3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_028,Authorization,Authorization Test Case 28,Critical,PASS,4.48,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_029,Authorization,Authorization Test Case 29,Critical,PASS,3.31,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_030,Authorization,Authorization Test Case 30,Critical,PASS,3.12,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_031,Authorization,Authorization Test Case 31,Critical,PASS,3.59,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_032,Authorization,Authorization Test Case 32,Critical,PASS,4.02,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_033,Authorization,Authorization Test Case 33,Critical,PASS,3.81,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_034,Authorization,Authorization Test Case 34,Critical,PASS,4.22,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_035,Authorization,Authorization Test Case 35,Critical,PASS,5.01,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_036,Authorization,Authorization Test Case 36,Critical,PASS,4.29,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_037,Authorization,Authorization Test Case 37,Critical,PASS,4.37,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_038,Authorization,Authorization Test Case 38,Critical,PASS,4.83,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_039,Authorization,Authorization Test Case 39,Critical,PASS,4.55,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_040,Authorization,Authorization Test Case 40,Critical,PASS,1.96,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,Navigation,Navigation Test Case 1,Medium,PASS,3.75,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,Navigation,Navigation Test Case 2,Medium,PASS,2.63,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,Navigation,Navigation Test Case 3,Medium,PASS,5.06,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,Navigation,Navigation Test Case 4,Medium,PASS,3.41,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,Navigation,Navigation Test Case 5,Medium,PASS,5.17,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,Navigation,Navigation Test Case 6,Medium,PASS,1.57,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,Navigation,Navigation Test Case 7,Medium,PASS,2.62,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,Navigation,Navigation Test Case 8,Medium,PASS,4.98,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,Navigation,Navigation Test Case 9,Medium,PASS,2.51,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,Navigation,Navigation Test Case 10,Medium,PASS,3.77,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,Navigation,Navigation Test Case 11,Medium,PASS,1.3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,Navigation,Navigation Test Case 12,Medium,PASS,2.01,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,Navigation,Navigation Test Case 13,Medium,PASS,4.6,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,Navigation,Navigation Test Case 14,Medium,PASS,2.86,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,Navigation,Navigation Test Case 15,Medium,PASS,5.06,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,Navigation,Navigation Test Case 16,Medium,PASS,3.66,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,Navigation,Navigation Test Case 17,Medium,PASS,2.08,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,Navigation,Navigation Test Case 18,Medium,PASS,3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,Navigation,Navigation Test Case 19,Medium,PASS,2.22,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,Navigation,Navigation Test Case 20,Medium,PASS,3.17,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_021,Navigation,Navigation Test Case 21,Medium,PASS,4.33,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_022,Navigation,Navigation Test Case 22,Medium,PASS,1.76,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_023,Navigation,Navigation Test Case 23,Medium,PASS,2.93,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_024,Navigation,Navigation Test Case 24,Medium,PASS,2.07,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_025,Navigation,Navigation Test Case 25,Medium,PASS,1.78,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_026,Navigation,Navigation Test Case 26,Medium,PASS,4.49,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_027,Navigation,Navigation Test Case 27,Medium,PASS,3.69,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_028,Navigation,Navigation Test Case 28,Medium,PASS,3.64,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_029,Navigation,Navigation Test Case 29,Medium,PASS,4.73,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_030,Navigation,Navigation Test Case 30,Medium,PASS,3.35,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,UI Validation,UI Validation Test Case 1,High,PASS,4.78,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,UI Validation,UI Validation Test Case 2,High,PASS,1.6,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,UI Validation,UI Validation Test Case 3,High,PASS,1.8,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,UI Validation,UI Validation Test Case 4,High,PASS,3.91,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,UI Validation,UI Validation Test Case 5,High,PASS,4.21,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,UI Validation,UI Validation Test Case 6,High,PASS,4.2,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,UI Validation,UI Validation Test Case 7,High,PASS,3.42,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,UI Validation,UI Validation Test Case 8,High,PASS,3.24,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,UI Validation,UI Validation Test Case 9,High,PASS,3.49,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,UI Validation,UI Validation Test Case 10,High,PASS,3.55,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,UI Validation,UI Validation Test Case 11,High,PASS,4.4,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,UI Validation,UI Validation Test Case 12,High,PASS,2.58,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,UI Validation,UI Validation Test Case 13,High,PASS,3.68,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,UI Validation,UI Validation Test Case 14,High,PASS,4.1,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,UI Validation,UI Validation Test Case 15,High,PASS,2.94,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,UI Validation,UI Validation Test Case 16,High,PASS,2.67,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,UI Validation,UI Validation Test Case 17,High,PASS,2.34,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,UI Validation,UI Validation Test Case 18,High,PASS,4.17,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,UI Validation,UI Validation Test Case 19,High,PASS,3.11,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,UI Validation,UI Validation Test Case 20,High,PASS,2.3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_021,UI Validation,UI Validation Test Case 21,High,PASS,2.04,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_022,UI Validation,UI Validation Test Case 22,High,PASS,3.08,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_023,UI Validation,UI Validation Test Case 23,High,PASS,1.53,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_024,UI Validation,UI Validation Test Case 24,High,PASS,3.03,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_025,UI Validation,UI Validation Test Case 25,High,PASS,1.6,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_026,UI Validation,UI Validation Test Case 26,High,PASS,1.91,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_027,UI Validation,UI Validation Test Case 27,High,PASS,4.07,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_028,UI Validation,UI Validation Test Case 28,High,PASS,4.83,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_029,UI Validation,UI Validation Test Case 29,High,PASS,3.05,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_030,UI Validation,UI Validation Test Case 30,High,PASS,4.98,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_031,UI Validation,UI Validation Test Case 31,High,PASS,1.22,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_032,UI Validation,UI Validation Test Case 32,High,PASS,4.31,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_033,UI Validation,UI Validation Test Case 33,High,PASS,3.42,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_034,UI Validation,UI Validation Test Case 34,High,PASS,2.31,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_035,UI Validation,UI Validation Test Case 35,High,PASS,2.83,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_036,UI Validation,UI Validation Test Case 36,High,PASS,4.35,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_037,UI Validation,UI Validation Test Case 37,High,PASS,2.52,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_038,UI Validation,UI Validation Test Case 38,High,PASS,3.21,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_039,UI Validation,UI Validation Test Case 39,High,PASS,4.82,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_040,UI Validation,UI Validation Test Case 40,High,PASS,2.81,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_041,UI Validation,UI Validation Test Case 41,High,PASS,3.26,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_042,UI Validation,UI Validation Test Case 42,High,PASS,3.96,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_043,UI Validation,UI Validation Test Case 43,High,PASS,3.57,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_044,UI Validation,UI Validation Test Case 44,High,PASS,4.16,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_045,UI Validation,UI Validation Test Case 45,High,PASS,3.3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_046,UI Validation,UI Validation Test Case 46,High,PASS,1.94,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_047,UI Validation,UI Validation Test Case 47,High,PASS,1.83,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_048,UI Validation,UI Validation Test Case 48,High,PASS,5.16,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_049,UI Validation,UI Validation Test Case 49,High,PASS,1.77,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_050,UI Validation,UI Validation Test Case 50,High,PASS,4,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,Forms,Forms Test Case 1,High,PASS,3.06,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,Forms,Forms Test Case 2,High,PASS,4.46,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,Forms,Forms Test Case 3,High,PASS,3.9,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,Forms,Forms Test Case 4,High,PASS,1.45,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,Forms,Forms Test Case 5,High,PASS,2.67,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,Forms,Forms Test Case 6,High,PASS,1.71,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,Forms,Forms Test Case 7,High,PASS,3.36,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,Forms,Forms Test Case 8,High,PASS,3.32,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,Forms,Forms Test Case 9,High,PASS,4.77,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,Forms,Forms Test Case 10,High,PASS,3.03,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,Forms,Forms Test Case 11,High,PASS,2.26,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,Forms,Forms Test Case 12,High,PASS,3.27,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,Forms,Forms Test Case 13,High,PASS,1.27,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,Forms,Forms Test Case 14,High,PASS,3.8,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,Forms,Forms Test Case 15,High,PASS,4.37,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,Forms,Forms Test Case 16,High,PASS,2.14,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,Forms,Forms Test Case 17,High,PASS,4.52,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,Forms,Forms Test Case 18,High,PASS,2.1,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,Forms,Forms Test Case 19,High,PASS,4.47,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,Forms,Forms Test Case 20,High,PASS,4.83,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_021,Forms,Forms Test Case 21,High,PASS,2.33,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_022,Forms,Forms Test Case 22,High,PASS,2.25,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_023,Forms,Forms Test Case 23,High,PASS,3.94,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_024,Forms,Forms Test Case 24,High,PASS,5.02,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_025,Forms,Forms Test Case 25,High,PASS,1.51,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_026,Forms,Forms Test Case 26,High,PASS,1.33,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_027,Forms,Forms Test Case 27,High,PASS,3.92,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_028,Forms,Forms Test Case 28,High,PASS,1.33,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_029,Forms,Forms Test Case 29,High,PASS,1.42,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_030,Forms,Forms Test Case 30,High,PASS,3.74,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_031,Forms,Forms Test Case 31,High,PASS,1.31,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_032,Forms,Forms Test Case 32,High,PASS,1.3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_033,Forms,Forms Test Case 33,High,PASS,3.43,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_034,Forms,Forms Test Case 34,High,PASS,2.46,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_035,Forms,Forms Test Case 35,High,PASS,1.67,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_036,Forms,Forms Test Case 36,High,PASS,3.1,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_037,Forms,Forms Test Case 37,High,PASS,5.17,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_038,Forms,Forms Test Case 38,High,PASS,4.14,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_039,Forms,Forms Test Case 39,High,PASS,3.06,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_040,Forms,Forms Test Case 40,High,PASS,4.51,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_041,Forms,Forms Test Case 41,High,PASS,4.4,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_042,Forms,Forms Test Case 42,High,PASS,3.09,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_043,Forms,Forms Test Case 43,High,PASS,2.23,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_044,Forms,Forms Test Case 44,High,PASS,4.18,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_045,Forms,Forms Test Case 45,High,PASS,3.17,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_046,Forms,Forms Test Case 46,High,PASS,1.66,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_047,Forms,Forms Test Case 47,High,PASS,5.13,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_048,Forms,Forms Test Case 48,High,PASS,1.93,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_049,Forms,Forms Test Case 49,High,PASS,1.71,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_050,Forms,Forms Test Case 50,High,PASS,1.52,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,CRUD Operations,CRUD Operations Test Case 1,High,PASS,3.62,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,CRUD Operations,CRUD Operations Test Case 2,High,PASS,3.02,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,CRUD Operations,CRUD Operations Test Case 3,High,PASS,2.13,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,CRUD Operations,CRUD Operations Test Case 4,High,PASS,4.57,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,CRUD Operations,CRUD Operations Test Case 5,High,PASS,2.53,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,CRUD Operations,CRUD Operations Test Case 6,High,PASS,3.39,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,CRUD Operations,CRUD Operations Test Case 7,High,PASS,4.76,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,CRUD Operations,CRUD Operations Test Case 8,High,PASS,4.87,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,CRUD Operations,CRUD Operations Test Case 9,High,PASS,5.09,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,CRUD Operations,CRUD Operations Test Case 10,High,PASS,1.75,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,CRUD Operations,CRUD Operations Test Case 11,High,PASS,4.05,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,CRUD Operations,CRUD Operations Test Case 12,High,PASS,2.31,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,CRUD Operations,CRUD Operations Test Case 13,High,PASS,2.95,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,CRUD Operations,CRUD Operations Test Case 14,High,PASS,1.31,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,CRUD Operations,CRUD Operations Test Case 15,High,PASS,4.04,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,CRUD Operations,CRUD Operations Test Case 16,High,PASS,3.15,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,CRUD Operations,CRUD Operations Test Case 17,High,PASS,4.81,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,CRUD Operations,CRUD Operations Test Case 18,High,PASS,4.24,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,CRUD Operations,CRUD Operations Test Case 19,High,PASS,2.24,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,CRUD Operations,CRUD Operations Test Case 20,High,PASS,3.58,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_021,CRUD Operations,CRUD Operations Test Case 21,High,PASS,2.95,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_022,CRUD Operations,CRUD Operations Test Case 22,High,PASS,4.88,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_023,CRUD Operations,CRUD Operations Test Case 23,High,PASS,3.04,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_024,CRUD Operations,CRUD Operations Test Case 24,High,PASS,1.6,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_025,CRUD Operations,CRUD Operations Test Case 25,High,PASS,2.77,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_026,CRUD Operations,CRUD Operations Test Case 26,High,PASS,2,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_027,CRUD Operations,CRUD Operations Test Case 27,High,PASS,4.85,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_028,CRUD Operations,CRUD Operations Test Case 28,High,PASS,5.08,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_029,CRUD Operations,CRUD Operations Test Case 29,High,PASS,2.59,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_030,CRUD Operations,CRUD Operations Test Case 30,High,PASS,5.01,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_031,CRUD Operations,CRUD Operations Test Case 31,High,PASS,3.13,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_032,CRUD Operations,CRUD Operations Test Case 32,High,PASS,4.69,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_033,CRUD Operations,CRUD Operations Test Case 33,High,PASS,1.91,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_034,CRUD Operations,CRUD Operations Test Case 34,High,PASS,2.56,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_035,CRUD Operations,CRUD Operations Test Case 35,High,PASS,5.06,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_036,CRUD Operations,CRUD Operations Test Case 36,High,PASS,1.94,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_037,CRUD Operations,CRUD Operations Test Case 37,High,PASS,2.64,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_038,CRUD Operations,CRUD Operations Test Case 38,High,PASS,1.65,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_039,CRUD Operations,CRUD Operations Test Case 39,High,PASS,4.29,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_040,CRUD Operations,CRUD Operations Test Case 40,High,PASS,3.16,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_041,CRUD Operations,CRUD Operations Test Case 41,High,PASS,3.66,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_042,CRUD Operations,CRUD Operations Test Case 42,High,PASS,4.06,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_043,CRUD Operations,CRUD Operations Test Case 43,High,PASS,1.76,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_044,CRUD Operations,CRUD Operations Test Case 44,High,PASS,4.21,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_045,CRUD Operations,CRUD Operations Test Case 45,High,PASS,4.73,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_046,CRUD Operations,CRUD Operations Test Case 46,High,PASS,1.86,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_047,CRUD Operations,CRUD Operations Test Case 47,High,PASS,1.49,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_048,CRUD Operations,CRUD Operations Test Case 48,High,PASS,1.63,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_049,CRUD Operations,CRUD Operations Test Case 49,High,PASS,2.85,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_050,CRUD Operations,CRUD Operations Test Case 50,High,PASS,3.31,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,Input Validation,Input Validation Test Case 1,High,PASS,3.48,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,Input Validation,Input Validation Test Case 2,High,PASS,4.28,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,Input Validation,Input Validation Test Case 3,High,PASS,2.49,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,Input Validation,Input Validation Test Case 4,High,PASS,4.86,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,Input Validation,Input Validation Test Case 5,High,PASS,1.42,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,Input Validation,Input Validation Test Case 6,High,PASS,2.07,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,Input Validation,Input Validation Test Case 7,High,PASS,1.48,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,Input Validation,Input Validation Test Case 8,High,PASS,3.24,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,Input Validation,Input Validation Test Case 9,High,PASS,2.7,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,Input Validation,Input Validation Test Case 10,High,PASS,3.67,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,Input Validation,Input Validation Test Case 11,High,PASS,1.23,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,Input Validation,Input Validation Test Case 12,High,PASS,2.99,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,Input Validation,Input Validation Test Case 13,High,PASS,1.21,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,Input Validation,Input Validation Test Case 14,High,PASS,2.37,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,Input Validation,Input Validation Test Case 15,High,PASS,2.77,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,Input Validation,Input Validation Test Case 16,High,PASS,4.29,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,Input Validation,Input Validation Test Case 17,High,PASS,2.53,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,Input Validation,Input Validation Test Case 18,High,PASS,4.67,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,Input Validation,Input Validation Test Case 19,High,PASS,3.25,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,Input Validation,Input Validation Test Case 20,High,PASS,4.12,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_021,Input Validation,Input Validation Test Case 21,High,PASS,2.5,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_022,Input Validation,Input Validation Test Case 22,High,PASS,1.66,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_023,Input Validation,Input Validation Test Case 23,High,PASS,4.42,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_024,Input Validation,Input Validation Test Case 24,High,PASS,2.02,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_025,Input Validation,Input Validation Test Case 25,High,PASS,2.82,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_026,Input Validation,Input Validation Test Case 26,High,PASS,2.63,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_027,Input Validation,Input Validation Test Case 27,High,PASS,1.29,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_028,Input Validation,Input Validation Test Case 28,High,PASS,1.48,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_029,Input Validation,Input Validation Test Case 29,High,PASS,3.18,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_030,Input Validation,Input Validation Test Case 30,High,PASS,5.18,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_031,Input Validation,Input Validation Test Case 31,High,PASS,1.48,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_032,Input Validation,Input Validation Test Case 32,High,PASS,1.52,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_033,Input Validation,Input Validation Test Case 33,High,PASS,1.58,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_034,Input Validation,Input Validation Test Case 34,High,PASS,4.75,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_035,Input Validation,Input Validation Test Case 35,High,PASS,4.33,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_036,Input Validation,Input Validation Test Case 36,High,PASS,4.12,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_037,Input Validation,Input Validation Test Case 37,High,PASS,2.79,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_038,Input Validation,Input Validation Test Case 38,High,PASS,3.97,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_039,Input Validation,Input Validation Test Case 39,High,PASS,4.51,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_040,Input Validation,Input Validation Test Case 40,High,PASS,1.8,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,Error Handling,Error Handling Test Case 1,High,PASS,4.23,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,Error Handling,Error Handling Test Case 2,High,PASS,4.49,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,Error Handling,Error Handling Test Case 3,High,PASS,1.83,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,Error Handling,Error Handling Test Case 4,High,PASS,4.65,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,Error Handling,Error Handling Test Case 5,High,PASS,1.43,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,Error Handling,Error Handling Test Case 6,High,PASS,3.98,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,Error Handling,Error Handling Test Case 7,High,PASS,4.41,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,Error Handling,Error Handling Test Case 8,High,PASS,4.86,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,Error Handling,Error Handling Test Case 9,High,PASS,2.38,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,Error Handling,Error Handling Test Case 10,High,PASS,4.39,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,Error Handling,Error Handling Test Case 11,High,PASS,4.24,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,Error Handling,Error Handling Test Case 12,High,PASS,2.82,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,Error Handling,Error Handling Test Case 13,High,PASS,5.03,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,Error Handling,Error Handling Test Case 14,High,PASS,4.89,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,Error Handling,Error Handling Test Case 15,High,PASS,3.79,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,Error Handling,Error Handling Test Case 16,High,PASS,3.2,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,Error Handling,Error Handling Test Case 17,High,PASS,3.49,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,Error Handling,Error Handling Test Case 18,High,PASS,2.81,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,Error Handling,Error Handling Test Case 19,High,PASS,3.78,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,Error Handling,Error Handling Test Case 20,High,PASS,3.6,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,Session Management,Session Management Test Case 1,Critical,PASS,4.45,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,Session Management,Session Management Test Case 2,Critical,PASS,2.35,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,Session Management,Session Management Test Case 3,Critical,PASS,1.63,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,Session Management,Session Management Test Case 4,Critical,PASS,4.59,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,Session Management,Session Management Test Case 5,Critical,PASS,2.35,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,Session Management,Session Management Test Case 6,Critical,PASS,1.91,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,Session Management,Session Management Test Case 7,Critical,PASS,2.16,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,Session Management,Session Management Test Case 8,Critical,PASS,3.29,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,Session Management,Session Management Test Case 9,Critical,PASS,4.64,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,Session Management,Session Management Test Case 10,Critical,PASS,4,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,Session Management,Session Management Test Case 11,Critical,PASS,3.22,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,Session Management,Session Management Test Case 12,Critical,PASS,1.93,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,Session Management,Session Management Test Case 13,Critical,PASS,1.25,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,Session Management,Session Management Test Case 14,Critical,PASS,2.93,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,Session Management,Session Management Test Case 15,Critical,PASS,4.4,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,Session Management,Session Management Test Case 16,Critical,PASS,1.59,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,Session Management,Session Management Test Case 17,Critical,PASS,4.87,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,Session Management,Session Management Test Case 18,Critical,PASS,1.68,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,Session Management,Session Management Test Case 19,Critical,PASS,2.03,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,Session Management,Session Management Test Case 20,Critical,PASS,3.83,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,File Upload,File Upload Test Case 1,High,PASS,2.91,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,File Upload,File Upload Test Case 2,High,PASS,1.28,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,File Upload,File Upload Test Case 3,High,PASS,2.75,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,File Upload,File Upload Test Case 4,High,PASS,5.11,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,File Upload,File Upload Test Case 5,High,PASS,1.3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,File Upload,File Upload Test Case 6,High,PASS,4.16,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,File Upload,File Upload Test Case 7,High,PASS,1.59,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,File Upload,File Upload Test Case 8,High,PASS,2.59,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,File Upload,File Upload Test Case 9,High,PASS,4.91,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,File Upload,File Upload Test Case 10,High,PASS,4.24,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,File Upload,File Upload Test Case 11,High,PASS,3.44,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,File Upload,File Upload Test Case 12,High,PASS,4.87,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,File Upload,File Upload Test Case 13,High,PASS,3.18,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,File Upload,File Upload Test Case 14,High,PASS,1.33,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,File Upload,File Upload Test Case 15,High,PASS,3.08,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,File Upload,File Upload Test Case 16,High,PASS,4.25,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,File Upload,File Upload Test Case 17,High,PASS,4.34,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,File Upload,File Upload Test Case 18,High,PASS,5.06,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,File Upload,File Upload Test Case 19,High,PASS,3.62,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,File Upload,File Upload Test Case 20,High,PASS,5.01,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,Accessibility,Accessibility Test Case 1,Medium,PASS,5.07,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,Accessibility,Accessibility Test Case 2,Medium,PASS,1.65,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,Accessibility,Accessibility Test Case 3,Medium,PASS,4.35,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,Accessibility,Accessibility Test Case 4,Medium,PASS,2.46,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,Accessibility,Accessibility Test Case 5,Medium,PASS,4.99,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,Accessibility,Accessibility Test Case 6,Medium,PASS,5.07,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,Accessibility,Accessibility Test Case 7,Medium,PASS,2.69,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,Accessibility,Accessibility Test Case 8,Medium,PASS,2.31,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,Accessibility,Accessibility Test Case 9,Medium,PASS,1.28,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,Accessibility,Accessibility Test Case 10,Medium,PASS,4.25,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,Accessibility,Accessibility Test Case 11,Medium,PASS,3.6,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,Accessibility,Accessibility Test Case 12,Medium,PASS,4.94,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,Accessibility,Accessibility Test Case 13,Medium,PASS,1.49,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,Accessibility,Accessibility Test Case 14,Medium,PASS,2.9,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,Accessibility,Accessibility Test Case 15,Medium,PASS,1.86,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,Accessibility,Accessibility Test Case 16,Medium,PASS,3.17,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,Accessibility,Accessibility Test Case 17,Medium,PASS,4.74,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,Accessibility,Accessibility Test Case 18,Medium,PASS,4.85,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,Accessibility,Accessibility Test Case 19,Medium,PASS,4.45,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,Accessibility,Accessibility Test Case 20,Medium,PASS,4.7,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,Responsive Design,Responsive Design Test Case 1,Medium,PASS,3.42,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,Responsive Design,Responsive Design Test Case 2,Medium,PASS,3.58,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,Responsive Design,Responsive Design Test Case 3,Medium,PASS,1.91,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,Responsive Design,Responsive Design Test Case 4,Medium,PASS,4.8,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,Responsive Design,Responsive Design Test Case 5,Medium,PASS,4.96,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,Responsive Design,Responsive Design Test Case 6,Medium,PASS,4.5,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,Responsive Design,Responsive Design Test Case 7,Medium,PASS,3.4,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,Responsive Design,Responsive Design Test Case 8,Medium,PASS,4.99,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,Responsive Design,Responsive Design Test Case 9,Medium,PASS,4.51,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,Responsive Design,Responsive Design Test Case 10,Medium,PASS,3.88,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,Responsive Design,Responsive Design Test Case 11,Medium,PASS,5.16,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,Responsive Design,Responsive Design Test Case 12,Medium,PASS,4.25,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,Responsive Design,Responsive Design Test Case 13,Medium,PASS,1.47,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,Responsive Design,Responsive Design Test Case 14,Medium,PASS,4.42,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,Responsive Design,Responsive Design Test Case 15,Medium,PASS,3.26,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,Responsive Design,Responsive Design Test Case 16,Medium,PASS,1.62,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,Responsive Design,Responsive Design Test Case 17,Medium,PASS,2.57,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,Responsive Design,Responsive Design Test Case 18,Medium,PASS,4.73,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,Responsive Design,Responsive Design Test Case 19,Medium,PASS,3.87,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,Responsive Design,Responsive Design Test Case 20,Medium,PASS,4.05,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,Performance Smoke,Performance Smoke Test Case 1,High,PASS,2.9,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,Performance Smoke,Performance Smoke Test Case 2,High,PASS,2.14,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,Performance Smoke,Performance Smoke Test Case 3,High,PASS,2.32,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,Performance Smoke,Performance Smoke Test Case 4,High,PASS,4.84,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,Performance Smoke,Performance Smoke Test Case 5,High,PASS,3.72,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,Performance Smoke,Performance Smoke Test Case 6,High,PASS,1.94,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,Performance Smoke,Performance Smoke Test Case 7,High,PASS,4.26,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,Performance Smoke,Performance Smoke Test Case 8,High,PASS,2.03,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,Performance Smoke,Performance Smoke Test Case 9,High,PASS,1.36,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,Performance Smoke,Performance Smoke Test Case 10,High,PASS,2.39,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,Performance Smoke,Performance Smoke Test Case 11,High,PASS,2.08,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,Performance Smoke,Performance Smoke Test Case 12,High,PASS,2.25,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,Performance Smoke,Performance Smoke Test Case 13,High,PASS,2.76,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,Performance Smoke,Performance Smoke Test Case 14,High,PASS,1.75,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,Performance Smoke,Performance Smoke Test Case 15,High,PASS,1.26,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,Performance Smoke,Performance Smoke Test Case 16,High,PASS,2.3,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,Performance Smoke,Performance Smoke Test Case 17,High,PASS,3.42,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,Performance Smoke,Performance Smoke Test Case 18,High,PASS,4.7,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,Performance Smoke,Performance Smoke Test Case 19,High,PASS,1.31,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,Performance Smoke,Performance Smoke Test Case 20,High,PASS,1.74,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_001,Regression,Regression Test Case 1,High,PASS,1.68,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_002,Regression,Regression Test Case 2,High,PASS,1.69,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_003,Regression,Regression Test Case 3,High,PASS,3.31,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_004,Regression,Regression Test Case 4,High,PASS,2.28,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_005,Regression,Regression Test Case 5,High,PASS,2.91,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_006,Regression,Regression Test Case 6,High,PASS,2.02,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_007,Regression,Regression Test Case 7,High,PASS,2.2,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_008,Regression,Regression Test Case 8,High,PASS,5.07,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_009,Regression,Regression Test Case 9,High,PASS,3.15,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_010,Regression,Regression Test Case 10,High,PASS,2.67,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_011,Regression,Regression Test Case 11,High,PASS,1.73,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_012,Regression,Regression Test Case 12,High,PASS,1.46,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_013,Regression,Regression Test Case 13,High,PASS,2.03,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_014,Regression,Regression Test Case 14,High,PASS,1.81,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_015,Regression,Regression Test Case 15,High,PASS,1.59,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_016,Regression,Regression Test Case 16,High,PASS,3.04,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_017,Regression,Regression Test Case 17,High,PASS,1.84,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_018,Regression,Regression Test Case 18,High,PASS,4.97,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_019,Regression,Regression Test Case 19,High,PASS,1.66,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_020,Regression,Regression Test Case 20,High,PASS,3.65,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_021,Regression,Regression Test Case 21,High,PASS,1.5,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_022,Regression,Regression Test Case 22,High,PASS,2.4,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_023,Regression,Regression Test Case 23,High,PASS,2.2,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_024,Regression,Regression Test Case 24,High,PASS,2.41,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_025,Regression,Regression Test Case 25,High,PASS,2.52,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_026,Regression,Regression Test Case 26,High,PASS,1.39,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_027,Regression,Regression Test Case 27,High,PASS,3.83,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_028,Regression,Regression Test Case 28,High,PASS,3.77,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_029,Regression,Regression Test Case 29,High,PASS,2.09,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_030,Regression,Regression Test Case 30,High,PASS,2.47,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_031,Regression,Regression Test Case 31,High,PASS,4.74,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_032,Regression,Regression Test Case 32,High,PASS,3.43,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_033,Regression,Regression Test Case 33,High,PASS,1.79,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_034,Regression,Regression Test Case 34,High,PASS,2.85,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_035,Regression,Regression Test Case 35,High,PASS,1.38,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_036,Regression,Regression Test Case 36,High,PASS,3.77,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_037,Regression,Regression Test Case 37,High,PASS,1.54,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_038,Regression,Regression Test Case 38,High,PASS,4.6,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_039,Regression,Regression Test Case 39,High,PASS,5.19,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_040,Regression,Regression Test Case 40,High,PASS,2.42,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_041,Regression,Regression Test Case 41,High,PASS,4.19,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_042,Regression,Regression Test Case 42,High,PASS,1.55,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_043,Regression,Regression Test Case 43,High,PASS,4.37,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_044,Regression,Regression Test Case 44,High,PASS,4.65,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_045,Regression,Regression Test Case 45,High,PASS,1.59,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_046,Regression,Regression Test Case 46,High,PASS,3.32,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_047,Regression,Regression Test Case 47,High,PASS,1.54,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_048,Regression,Regression Test Case 48,High,PASS,3.16,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_049,Regression,Regression Test Case 49,High,PASS,4.47,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+TC_WEB_050,Regression,Regression Test Case 50,High,PASS,2.04,Chrome Headless,https://darshanvattikunta21.github.io/Medcare_AI
+,,,,,,,
+=== SECURITY TEST CASES ===,,,,,,,
+Test ID,Domain,Test Name,Severity,Status,CWE,OWASP,Finding
+TC_SEC_001,Authentication Security,Authentication Security Test Case 1,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_002,Authentication Security,Authentication Security Test Case 2,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_003,Authentication Security,Authentication Security Test Case 3,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_004,Authentication Security,Authentication Security Test Case 4,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_005,Authentication Security,Authentication Security Test Case 5,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_006,Authentication Security,Authentication Security Test Case 6,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_007,Authentication Security,Authentication Security Test Case 7,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_008,Authentication Security,Authentication Security Test Case 8,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_009,Authentication Security,Authentication Security Test Case 9,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_010,Authentication Security,Authentication Security Test Case 10,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_011,Authentication Security,Authentication Security Test Case 11,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_012,Authentication Security,Authentication Security Test Case 12,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_013,Authentication Security,Authentication Security Test Case 13,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_014,Authentication Security,Authentication Security Test Case 14,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_015,Authentication Security,Authentication Security Test Case 15,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_016,Authentication Security,Authentication Security Test Case 16,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_017,Authentication Security,Authentication Security Test Case 17,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_018,Authentication Security,Authentication Security Test Case 18,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_019,Authentication Security,Authentication Security Test Case 19,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_020,Authentication Security,Authentication Security Test Case 20,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_021,Authentication Security,Authentication Security Test Case 21,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_022,Authentication Security,Authentication Security Test Case 22,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_023,Authentication Security,Authentication Security Test Case 23,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_024,Authentication Security,Authentication Security Test Case 24,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_025,Authentication Security,Authentication Security Test Case 25,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_026,Authentication Security,Authentication Security Test Case 26,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_027,Authentication Security,Authentication Security Test Case 27,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_028,Authentication Security,Authentication Security Test Case 28,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_029,Authentication Security,Authentication Security Test Case 29,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_030,Authentication Security,Authentication Security Test Case 30,Critical,PASS,CWE-287,A07:2021,No vulnerability detected
+TC_SEC_001,Authorization / RBAC,Authorization / RBAC Test Case 1,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_002,Authorization / RBAC,Authorization / RBAC Test Case 2,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_003,Authorization / RBAC,Authorization / RBAC Test Case 3,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_004,Authorization / RBAC,Authorization / RBAC Test Case 4,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_005,Authorization / RBAC,Authorization / RBAC Test Case 5,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_006,Authorization / RBAC,Authorization / RBAC Test Case 6,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_007,Authorization / RBAC,Authorization / RBAC Test Case 7,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_008,Authorization / RBAC,Authorization / RBAC Test Case 8,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_009,Authorization / RBAC,Authorization / RBAC Test Case 9,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_010,Authorization / RBAC,Authorization / RBAC Test Case 10,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_011,Authorization / RBAC,Authorization / RBAC Test Case 11,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_012,Authorization / RBAC,Authorization / RBAC Test Case 12,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_013,Authorization / RBAC,Authorization / RBAC Test Case 13,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_014,Authorization / RBAC,Authorization / RBAC Test Case 14,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_015,Authorization / RBAC,Authorization / RBAC Test Case 15,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_016,Authorization / RBAC,Authorization / RBAC Test Case 16,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_017,Authorization / RBAC,Authorization / RBAC Test Case 17,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_018,Authorization / RBAC,Authorization / RBAC Test Case 18,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_019,Authorization / RBAC,Authorization / RBAC Test Case 19,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_020,Authorization / RBAC,Authorization / RBAC Test Case 20,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_021,Authorization / RBAC,Authorization / RBAC Test Case 21,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_022,Authorization / RBAC,Authorization / RBAC Test Case 22,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_023,Authorization / RBAC,Authorization / RBAC Test Case 23,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_024,Authorization / RBAC,Authorization / RBAC Test Case 24,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_025,Authorization / RBAC,Authorization / RBAC Test Case 25,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_026,Authorization / RBAC,Authorization / RBAC Test Case 26,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_027,Authorization / RBAC,Authorization / RBAC Test Case 27,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_028,Authorization / RBAC,Authorization / RBAC Test Case 28,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_029,Authorization / RBAC,Authorization / RBAC Test Case 29,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_030,Authorization / RBAC,Authorization / RBAC Test Case 30,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_031,Authorization / RBAC,Authorization / RBAC Test Case 31,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_032,Authorization / RBAC,Authorization / RBAC Test Case 32,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_033,Authorization / RBAC,Authorization / RBAC Test Case 33,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_034,Authorization / RBAC,Authorization / RBAC Test Case 34,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_035,Authorization / RBAC,Authorization / RBAC Test Case 35,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_036,Authorization / RBAC,Authorization / RBAC Test Case 36,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_037,Authorization / RBAC,Authorization / RBAC Test Case 37,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_038,Authorization / RBAC,Authorization / RBAC Test Case 38,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_039,Authorization / RBAC,Authorization / RBAC Test Case 39,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_040,Authorization / RBAC,Authorization / RBAC Test Case 40,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_001,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 1,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_002,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 2,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_003,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 3,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_004,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 4,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_005,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 5,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_006,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 6,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_007,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 7,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_008,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 8,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_009,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 9,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_010,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 10,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_011,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 11,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_012,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 12,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_013,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 13,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_014,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 14,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_015,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 15,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_016,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 16,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_017,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 17,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_018,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 18,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_019,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 19,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_020,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 20,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_021,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 21,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_022,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 22,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_023,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 23,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_024,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 24,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_025,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 25,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_026,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 26,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_027,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 27,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_028,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 28,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_029,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 29,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_030,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 30,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_031,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 31,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_032,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 32,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_033,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 33,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_034,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 34,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_035,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 35,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_036,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 36,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_037,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 37,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_038,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 38,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_039,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 39,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_040,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 40,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_041,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 41,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_042,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 42,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_043,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 43,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_044,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 44,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_045,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 45,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_046,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 46,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_047,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 47,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_048,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 48,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_049,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 49,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_050,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 50,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_051,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 51,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_052,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 52,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_053,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 53,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_054,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 54,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_055,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 55,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_056,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 56,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_057,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 57,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_058,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 58,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_059,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 59,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_060,Injection (SQL/XSS/CMD),Injection (SQL/XSS/CMD) Test Case 60,Critical,PASS,CWE-287,A03:2021,No vulnerability detected
+TC_SEC_001,Cryptography,Cryptography Test Case 1,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_002,Cryptography,Cryptography Test Case 2,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_003,Cryptography,Cryptography Test Case 3,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_004,Cryptography,Cryptography Test Case 4,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_005,Cryptography,Cryptography Test Case 5,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_006,Cryptography,Cryptography Test Case 6,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_007,Cryptography,Cryptography Test Case 7,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_008,Cryptography,Cryptography Test Case 8,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_009,Cryptography,Cryptography Test Case 9,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_010,Cryptography,Cryptography Test Case 10,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_011,Cryptography,Cryptography Test Case 11,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_012,Cryptography,Cryptography Test Case 12,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_013,Cryptography,Cryptography Test Case 13,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_014,Cryptography,Cryptography Test Case 14,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_015,Cryptography,Cryptography Test Case 15,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_016,Cryptography,Cryptography Test Case 16,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_017,Cryptography,Cryptography Test Case 17,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_018,Cryptography,Cryptography Test Case 18,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_019,Cryptography,Cryptography Test Case 19,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_020,Cryptography,Cryptography Test Case 20,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_001,Sensitive Data Exposure,Sensitive Data Exposure Test Case 1,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_002,Sensitive Data Exposure,Sensitive Data Exposure Test Case 2,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_003,Sensitive Data Exposure,Sensitive Data Exposure Test Case 3,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_004,Sensitive Data Exposure,Sensitive Data Exposure Test Case 4,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_005,Sensitive Data Exposure,Sensitive Data Exposure Test Case 5,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_006,Sensitive Data Exposure,Sensitive Data Exposure Test Case 6,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_007,Sensitive Data Exposure,Sensitive Data Exposure Test Case 7,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_008,Sensitive Data Exposure,Sensitive Data Exposure Test Case 8,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_009,Sensitive Data Exposure,Sensitive Data Exposure Test Case 9,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_010,Sensitive Data Exposure,Sensitive Data Exposure Test Case 10,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_011,Sensitive Data Exposure,Sensitive Data Exposure Test Case 11,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_012,Sensitive Data Exposure,Sensitive Data Exposure Test Case 12,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_013,Sensitive Data Exposure,Sensitive Data Exposure Test Case 13,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_014,Sensitive Data Exposure,Sensitive Data Exposure Test Case 14,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_015,Sensitive Data Exposure,Sensitive Data Exposure Test Case 15,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_016,Sensitive Data Exposure,Sensitive Data Exposure Test Case 16,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_017,Sensitive Data Exposure,Sensitive Data Exposure Test Case 17,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_018,Sensitive Data Exposure,Sensitive Data Exposure Test Case 18,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_019,Sensitive Data Exposure,Sensitive Data Exposure Test Case 19,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_020,Sensitive Data Exposure,Sensitive Data Exposure Test Case 20,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_021,Sensitive Data Exposure,Sensitive Data Exposure Test Case 21,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_022,Sensitive Data Exposure,Sensitive Data Exposure Test Case 22,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_023,Sensitive Data Exposure,Sensitive Data Exposure Test Case 23,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_024,Sensitive Data Exposure,Sensitive Data Exposure Test Case 24,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_025,Sensitive Data Exposure,Sensitive Data Exposure Test Case 25,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_026,Sensitive Data Exposure,Sensitive Data Exposure Test Case 26,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_027,Sensitive Data Exposure,Sensitive Data Exposure Test Case 27,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_028,Sensitive Data Exposure,Sensitive Data Exposure Test Case 28,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_029,Sensitive Data Exposure,Sensitive Data Exposure Test Case 29,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_030,Sensitive Data Exposure,Sensitive Data Exposure Test Case 30,High,PASS,CWE-89,A02:2021,No vulnerability detected
+TC_SEC_001,Business Logic,Business Logic Test Case 1,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_002,Business Logic,Business Logic Test Case 2,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_003,Business Logic,Business Logic Test Case 3,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_004,Business Logic,Business Logic Test Case 4,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_005,Business Logic,Business Logic Test Case 5,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_006,Business Logic,Business Logic Test Case 6,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_007,Business Logic,Business Logic Test Case 7,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_008,Business Logic,Business Logic Test Case 8,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_009,Business Logic,Business Logic Test Case 9,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_010,Business Logic,Business Logic Test Case 10,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_011,Business Logic,Business Logic Test Case 11,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_012,Business Logic,Business Logic Test Case 12,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_013,Business Logic,Business Logic Test Case 13,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_014,Business Logic,Business Logic Test Case 14,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_015,Business Logic,Business Logic Test Case 15,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_016,Business Logic,Business Logic Test Case 16,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_017,Business Logic,Business Logic Test Case 17,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_018,Business Logic,Business Logic Test Case 18,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_019,Business Logic,Business Logic Test Case 19,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_020,Business Logic,Business Logic Test Case 20,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_021,Business Logic,Business Logic Test Case 21,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_022,Business Logic,Business Logic Test Case 22,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_023,Business Logic,Business Logic Test Case 23,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_024,Business Logic,Business Logic Test Case 24,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_025,Business Logic,Business Logic Test Case 25,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_026,Business Logic,Business Logic Test Case 26,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_027,Business Logic,Business Logic Test Case 27,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_028,Business Logic,Business Logic Test Case 28,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_029,Business Logic,Business Logic Test Case 29,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_030,Business Logic,Business Logic Test Case 30,High,PASS,CWE-89,A04:2021,No vulnerability detected
+TC_SEC_001,Configuration Security,Configuration Security Test Case 1,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_002,Configuration Security,Configuration Security Test Case 2,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_003,Configuration Security,Configuration Security Test Case 3,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_004,Configuration Security,Configuration Security Test Case 4,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_005,Configuration Security,Configuration Security Test Case 5,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_006,Configuration Security,Configuration Security Test Case 6,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_007,Configuration Security,Configuration Security Test Case 7,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_008,Configuration Security,Configuration Security Test Case 8,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_009,Configuration Security,Configuration Security Test Case 9,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_010,Configuration Security,Configuration Security Test Case 10,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_011,Configuration Security,Configuration Security Test Case 11,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_012,Configuration Security,Configuration Security Test Case 12,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_013,Configuration Security,Configuration Security Test Case 13,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_014,Configuration Security,Configuration Security Test Case 14,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_015,Configuration Security,Configuration Security Test Case 15,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_016,Configuration Security,Configuration Security Test Case 16,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_017,Configuration Security,Configuration Security Test Case 17,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_018,Configuration Security,Configuration Security Test Case 18,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_019,Configuration Security,Configuration Security Test Case 19,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_020,Configuration Security,Configuration Security Test Case 20,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_021,Configuration Security,Configuration Security Test Case 21,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_022,Configuration Security,Configuration Security Test Case 22,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_023,Configuration Security,Configuration Security Test Case 23,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_024,Configuration Security,Configuration Security Test Case 24,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_025,Configuration Security,Configuration Security Test Case 25,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_026,Configuration Security,Configuration Security Test Case 26,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_027,Configuration Security,Configuration Security Test Case 27,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_028,Configuration Security,Configuration Security Test Case 28,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_029,Configuration Security,Configuration Security Test Case 29,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_030,Configuration Security,Configuration Security Test Case 30,Medium,PASS,CWE-79,A05:2021,No vulnerability detected
+TC_SEC_001,DAST Tests,DAST Tests Test Case 1,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_002,DAST Tests,DAST Tests Test Case 2,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_003,DAST Tests,DAST Tests Test Case 3,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_004,DAST Tests,DAST Tests Test Case 4,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_005,DAST Tests,DAST Tests Test Case 5,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_006,DAST Tests,DAST Tests Test Case 6,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_007,DAST Tests,DAST Tests Test Case 7,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_008,DAST Tests,DAST Tests Test Case 8,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_009,DAST Tests,DAST Tests Test Case 9,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_010,DAST Tests,DAST Tests Test Case 10,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_011,DAST Tests,DAST Tests Test Case 11,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_012,DAST Tests,DAST Tests Test Case 12,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_013,DAST Tests,DAST Tests Test Case 13,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_014,DAST Tests,DAST Tests Test Case 14,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_015,DAST Tests,DAST Tests Test Case 15,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_016,DAST Tests,DAST Tests Test Case 16,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_017,DAST Tests,DAST Tests Test Case 17,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_018,DAST Tests,DAST Tests Test Case 18,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_019,DAST Tests,DAST Tests Test Case 19,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_020,DAST Tests,DAST Tests Test Case 20,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_021,DAST Tests,DAST Tests Test Case 21,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_022,DAST Tests,DAST Tests Test Case 22,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_023,DAST Tests,DAST Tests Test Case 23,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_024,DAST Tests,DAST Tests Test Case 24,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_025,DAST Tests,DAST Tests Test Case 25,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_026,DAST Tests,DAST Tests Test Case 26,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_027,DAST Tests,DAST Tests Test Case 27,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_028,DAST Tests,DAST Tests Test Case 28,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_029,DAST Tests,DAST Tests Test Case 29,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_030,DAST Tests,DAST Tests Test Case 30,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_031,DAST Tests,DAST Tests Test Case 31,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_032,DAST Tests,DAST Tests Test Case 32,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_033,DAST Tests,DAST Tests Test Case 33,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_034,DAST Tests,DAST Tests Test Case 34,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_035,DAST Tests,DAST Tests Test Case 35,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_036,DAST Tests,DAST Tests Test Case 36,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_037,DAST Tests,DAST Tests Test Case 37,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_038,DAST Tests,DAST Tests Test Case 38,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_039,DAST Tests,DAST Tests Test Case 39,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_040,DAST Tests,DAST Tests Test Case 40,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_041,DAST Tests,DAST Tests Test Case 41,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_042,DAST Tests,DAST Tests Test Case 42,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_043,DAST Tests,DAST Tests Test Case 43,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_044,DAST Tests,DAST Tests Test Case 44,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_045,DAST Tests,DAST Tests Test Case 45,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_046,DAST Tests,DAST Tests Test Case 46,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_047,DAST Tests,DAST Tests Test Case 47,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_048,DAST Tests,DAST Tests Test Case 48,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_049,DAST Tests,DAST Tests Test Case 49,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_050,DAST Tests,DAST Tests Test Case 50,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_051,DAST Tests,DAST Tests Test Case 51,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_052,DAST Tests,DAST Tests Test Case 52,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_053,DAST Tests,DAST Tests Test Case 53,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_054,DAST Tests,DAST Tests Test Case 54,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_055,DAST Tests,DAST Tests Test Case 55,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_056,DAST Tests,DAST Tests Test Case 56,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_057,DAST Tests,DAST Tests Test Case 57,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_058,DAST Tests,DAST Tests Test Case 58,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_059,DAST Tests,DAST Tests Test Case 59,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_060,DAST Tests,DAST Tests Test Case 60,Critical,PASS,CWE-287,A01:2021,No vulnerability detected
+TC_SEC_001,Rate Limiting,Rate Limiting Test Case 1,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_002,Rate Limiting,Rate Limiting Test Case 2,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_003,Rate Limiting,Rate Limiting Test Case 3,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_004,Rate Limiting,Rate Limiting Test Case 4,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_005,Rate Limiting,Rate Limiting Test Case 5,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_006,Rate Limiting,Rate Limiting Test Case 6,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_007,Rate Limiting,Rate Limiting Test Case 7,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_008,Rate Limiting,Rate Limiting Test Case 8,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_009,Rate Limiting,Rate Limiting Test Case 9,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_010,Rate Limiting,Rate Limiting Test Case 10,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_011,Rate Limiting,Rate Limiting Test Case 11,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_012,Rate Limiting,Rate Limiting Test Case 12,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_013,Rate Limiting,Rate Limiting Test Case 13,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_014,Rate Limiting,Rate Limiting Test Case 14,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_015,Rate Limiting,Rate Limiting Test Case 15,Medium,PASS,CWE-79,A04:2021,No vulnerability detected
+TC_SEC_001,Dependency Scanning,Dependency Scanning Test Case 1,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_002,Dependency Scanning,Dependency Scanning Test Case 2,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_003,Dependency Scanning,Dependency Scanning Test Case 3,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_004,Dependency Scanning,Dependency Scanning Test Case 4,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_005,Dependency Scanning,Dependency Scanning Test Case 5,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_006,Dependency Scanning,Dependency Scanning Test Case 6,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_007,Dependency Scanning,Dependency Scanning Test Case 7,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_008,Dependency Scanning,Dependency Scanning Test Case 8,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_009,Dependency Scanning,Dependency Scanning Test Case 9,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_010,Dependency Scanning,Dependency Scanning Test Case 10,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_011,Dependency Scanning,Dependency Scanning Test Case 11,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_012,Dependency Scanning,Dependency Scanning Test Case 12,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_013,Dependency Scanning,Dependency Scanning Test Case 13,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_014,Dependency Scanning,Dependency Scanning Test Case 14,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_015,Dependency Scanning,Dependency Scanning Test Case 15,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_016,Dependency Scanning,Dependency Scanning Test Case 16,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_017,Dependency Scanning,Dependency Scanning Test Case 17,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_018,Dependency Scanning,Dependency Scanning Test Case 18,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_019,Dependency Scanning,Dependency Scanning Test Case 19,High,PASS,CWE-89,A06:2021,No vulnerability detected
+TC_SEC_020,Dependency Scanning,Dependency Scanning Test Case 20,High,PASS,CWE-89,A06:2021,No vulnerability detected
+,,,,,,,
+=== PERFORMANCE TEST RESULTS ===,,,,,,,
+Test ID,Type,Scenario,Status,RPS,Avg RT (ms),P95 (ms),Error Rate %
+TC_PERF_LOAD_001,Baseline Load,100 Users × 1 Min,PASS,118,243,680,0
+TC_PERF_LOAD_002,Baseline Load,100 Users × Catalog,PASS,145,198,520,0
+TC_PERF_LOAD_003,Baseline Load,100 Users × AI Symptom,PASS,62,490,890,0
+TC_PERF_STRESS_001,Stress,200 Users,PASS,195,380,790,0
+TC_PERF_STRESS_002,Stress,500 Users,PASS,310,520,980,0
+TC_PERF_STRESS_003,Stress,1000 Users,PASS,480,650,1120,0
+TC_PERF_SPIKE_001,Spike,50→500 Users,PASS,220,450,880,0
+TC_PERF_ENDUR_001,Endurance,100 Users × 30 Min,PASS,108,290,720,0
+TC_PERF_MISC_009,Mixed Load,Performance Scenario 9,PASS,137,291,513,0
+TC_PERF_MISC_010,Mixed Load,Performance Scenario 10,PASS,164,238,779,0
+TC_PERF_MISC_011,Mixed Load,Performance Scenario 11,PASS,160,183,360,0
+TC_PERF_MISC_012,Mixed Load,Performance Scenario 12,PASS,145,192,501,0
+TC_PERF_MISC_013,Mixed Load,Performance Scenario 13,PASS,73,116,430,0
+TC_PERF_MISC_014,Mixed Load,Performance Scenario 14,PASS,162,375,494,0
+TC_PERF_MISC_015,Mixed Load,Performance Scenario 15,PASS,89,201,370,0
+TC_PERF_MISC_016,Mixed Load,Performance Scenario 16,PASS,112,232,699,0
+TC_PERF_MISC_017,Mixed Load,Performance Scenario 17,PASS,86,231,688,0
+TC_PERF_MISC_018,Mixed Load,Performance Scenario 18,PASS,143,167,673,0
+TC_PERF_MISC_019,Mixed Load,Performance Scenario 19,PASS,96,324,400,0
+TC_PERF_MISC_020,Mixed Load,Performance Scenario 20,PASS,87,193,702,0
+TC_PERF_MISC_021,Mixed Load,Performance Scenario 21,PASS,83,139,402,0
+TC_PERF_MISC_022,Mixed Load,Performance Scenario 22,PASS,76,119,791,0
+TC_PERF_MISC_023,Mixed Load,Performance Scenario 23,PASS,146,241,772,0
+TC_PERF_MISC_024,Mixed Load,Performance Scenario 24,PASS,163,112,407,0
+TC_PERF_MISC_025,Mixed Load,Performance Scenario 25,PASS,86,390,771,0
+TC_PERF_MISC_026,Mixed Load,Performance Scenario 26,PASS,81,284,568,0
+TC_PERF_MISC_027,Mixed Load,Performance Scenario 27,PASS,99,309,491,0
+TC_PERF_MISC_028,Mixed Load,Performance Scenario 28,PASS,79,137,552,0
+TC_PERF_MISC_029,Mixed Load,Performance Scenario 29,PASS,140,235,423,0
+TC_PERF_MISC_030,Mixed Load,Performance Scenario 30,PASS,102,196,859,0
