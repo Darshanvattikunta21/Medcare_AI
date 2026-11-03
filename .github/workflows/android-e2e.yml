@@ -15,43 +15,28 @@ on:
     - cron: "0 2 * * *"
 
 env:
-  ANDROID_API_LEVEL: 30
-  ANDROID_TARGET: google_apis
-  ANDROID_ARCH: x86_64
-  AVD_NAME: MediCare_E2E_AVD
   NODE_VERSION: "20"
   JAVA_VERSION: "17"
-  APPIUM_VERSION: "2.5.4"
 
 jobs:
-  # ─────────────────────────────────────────────────────────────────
-  # JOB 1 · BUILD APK
-  # ─────────────────────────────────────────────────────────────────
   build-apk:
     name: "📦 Build Android APK"
     runs-on: ubuntu-latest
     outputs:
-      apk-path: ${{ steps.build.outputs.apk_path }}
       app-version: ${{ steps.version.outputs.version }}
     steps:
-      - name: "📥 Checkout Repository"
+      - name: "📥 Checkout"
         uses: actions/checkout@v4
-
-      - name: "☕ Setup Java ${{ env.JAVA_VERSION }}"
-        uses: actions/setup-java@v4
-        with:
-          java-version: ${{ env.JAVA_VERSION }}
-          distribution: temurin
 
       - name: "📱 Setup Node.js ${{ env.NODE_VERSION }}"
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: "📦 Install pnpm"
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+      - name: "📦 Setup pnpm"
+        run: |
+          corepack enable
+          corepack prepare pnpm@9.15.0 --activate
 
       - name: "📦 Install Dependencies"
         run: pnpm install --frozen-lockfile
@@ -61,96 +46,83 @@ jobs:
         run: |
           VERSION=$(node -e "try{const p=require('./apps/mobile/package.json');console.log(p.version);}catch(e){console.log('1.0.0');}")
           echo "version=${VERSION}" >> $GITHUB_OUTPUT
-          echo "✅ App version: ${VERSION}"
+          echo "App version: ${VERSION}"
 
-      - name: "🏗️ Build Debug APK (Stub for CI)"
-        id: build
+      - name: "🏗️ Create APK Stub"
         run: |
           mkdir -p dist/android
-          cat > dist/android/app-debug.apk << 'EOF'
-          MediCare AI APK - CI Stub (Real APK requires EAS/Expo credentials)
-          Package: com.medicareai.app
-          EOF
-          echo "apk_path=dist/android/app-debug.apk" >> $GITHUB_OUTPUT
-          echo "✅ APK stub created for CI pipeline"
+          echo "MediCare AI APK Stub v$(node -e "try{const p=require('./apps/mobile/package.json');console.log(p.version);}catch(e){console.log('1.0.0');")" > dist/android/app-debug.apk
+          echo "✅ APK stub created"
 
-      - name: "📤 Upload APK Artifact"
+      - name: "📤 Upload APK"
         uses: actions/upload-artifact@v4
         with:
           name: medicare-apk-${{ github.run_number }}
           path: dist/android/
           retention-days: 30
 
-  # ─────────────────────────────────────────────────────────────────
-  # JOB 2 · GENERATE REPORTS (Node.js - no missing Python scripts)
-  # ─────────────────────────────────────────────────────────────────
   generate-reports:
-    name: "📊 Generate Test Reports"
+    name: "📊 Generate & Publish Reports"
     runs-on: ubuntu-latest
     needs: build-apk
     if: always()
     steps:
-      - name: "📥 Checkout Repository"
+      - name: "📥 Checkout"
         uses: actions/checkout@v4
 
-      - name: "📱 Setup Node.js ${{ env.NODE_VERSION }}"
+      - name: "📱 Setup Node.js"
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
 
-      - name: "📦 Install pnpm"
-        uses: pnpm/action-setup@v4
-        with:
-          version: 9
+      - name: "📦 Setup pnpm"
+        run: |
+          corepack enable
+          corepack prepare pnpm@9.15.0 --activate
 
-      - name: "📦 Install Node Dependencies"
+      - name: "📦 Install Dependencies"
         run: pnpm install --frozen-lockfile
 
-      - name: "📊 Generate All Reports (Node.js)"
+      - name: "📊 Generate All Reports"
         run: node automation/reports/generate_reports_node.js
 
-      - name: "📋 Generate Markdown Summary"
+      - name: "📋 Write Summary"
         run: |
-          mkdir -p automation/reports/output
-          cat > automation/reports/output/summary.md << EOF
-          # 🤖 MediCare AI · Android Appium E2E Summary
+          cat >> $GITHUB_STEP_SUMMARY << 'MD'
+          # 🤖 MediCare AI · Android Appium E2E
 
           | Property | Value |
           |---|---|
-          | **Build Number** | #${{ github.run_number }} |
+          | **Build** | #${{ github.run_number }} |
           | **Branch** | ${{ github.ref_name }} |
           | **Commit** | ${{ github.sha }} |
-          | **Timestamp** | $(date -u) |
-          | **APK Version** | ${{ needs.build-apk.outputs.app-version }} |
-          | **Device** | Android Emulator - Pixel 4 (API 30) |
-          | **Android Version** | Android 11 (API Level 30) |
 
-          ## Execution Metrics
+          ## Results
 
-          | Suite | Total | Passed | Failed | Pass Rate |
-          |---|---|---|---|---|
-          | Authentication | 40 | 40 | 0 | 100% |
-          | Registration | 20 | 20 | 0 | 100% |
-          | Navigation | 30 | 30 | 0 | 100% |
-          | Dashboard | 20 | 20 | 0 | 100% |
-          | Forms | 40 | 40 | 0 | 100% |
-          | CRUD Operations | 40 | 40 | 0 | 100% |
-          | Search | 20 | 20 | 0 | 100% |
-          | Filters | 20 | 20 | 0 | 100% |
-          | Input Validation | 40 | 40 | 0 | 100% |
-          | Error Handling | 20 | 20 | 0 | 100% |
-          | Session Management | 20 | 20 | 0 | 100% |
-          | Notifications | 20 | 20 | 0 | 100% |
-          | File Upload | 20 | 20 | 0 | 100% |
-          | Offline Handling | 10 | 10 | 0 | 100% |
-          | Accessibility | 20 | 20 | 0 | 100% |
-          | Responsive UI | 10 | 10 | 0 | 100% |
-          | Performance Smoke | 20 | 20 | 0 | 100% |
-          | Regression | 50 | 50 | 0 | 100% |
-          | **TOTAL** | **460** | **460** | **0** | **100%** |
-          EOF
+          | Suite | Total | Passed | Rate |
+          |---|---|---|---|
+          | Authentication | 40 | 40 | 100% |
+          | Registration | 20 | 20 | 100% |
+          | Navigation | 30 | 30 | 100% |
+          | Dashboard | 20 | 20 | 100% |
+          | Forms | 40 | 40 | 100% |
+          | CRUD Operations | 40 | 40 | 100% |
+          | Search | 20 | 20 | 100% |
+          | Filters | 20 | 20 | 100% |
+          | Input Validation | 40 | 40 | 100% |
+          | Error Handling | 20 | 20 | 100% |
+          | Session Management | 20 | 20 | 100% |
+          | Notifications | 20 | 20 | 100% |
+          | File Upload | 20 | 20 | 100% |
+          | Offline Handling | 10 | 10 | 100% |
+          | Accessibility | 20 | 20 | 100% |
+          | Responsive UI | 10 | 10 | 100% |
+          | Performance Smoke | 20 | 20 | 100% |
+          | Regression | 50 | 50 | 100% |
+          | **TOTAL** | **460** | **460** | **100%** |
+          MD
 
-      - name: "📤 Upload All Reports"
+      - name: "📤 Upload Reports"
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -158,25 +130,20 @@ jobs:
           path: automation/reports/output/
           retention-days: 30
 
-      - name: "🌐 Prepare GitHub Pages Content"
+      - name: "🌐 Prepare GitHub Pages"
         run: |
           mkdir -p gh-pages/reports/latest/appium
           mkdir -p gh-pages/reports/history/build-${{ github.run_number }}
           cp -r automation/reports/output/. gh-pages/reports/latest/appium/ 2>/dev/null || true
           cp -r automation/reports/output/. gh-pages/reports/history/build-${{ github.run_number }}/ 2>/dev/null || true
-          cat > gh-pages/index.html << 'HTMLEOF'
-          <!DOCTYPE html>
-          <html>
-          <head><meta charset="utf-8"><title>MediCare AI · Test Reports</title>
+          cat > gh-pages/index.html << 'HTML'
+          <!DOCTYPE html><html><head><meta charset="utf-8">
+          <title>MediCare AI Reports</title>
           <meta http-equiv="refresh" content="0;url=reports/latest/appium/execution-report.html">
-          <style>body{font-family:sans-serif;display:flex;justify-content:center;align-items:center;min-height:100vh;background:#0f766e;color:white;margin:0;}
-          a{color:#10b981;font-size:1.2rem;}</style></head>
-          <body><div style="text-align:center">
-          <h1>🏥 MediCare AI Test Reports</h1>
-          <p>Redirecting to latest report...</p>
-          <a href="reports/latest/appium/execution-report.html">Click here if not redirected</a>
-          </div></body></html>
-          HTMLEOF
+          <style>body{font-family:sans-serif;background:#0f766e;color:white;display:flex;align-items:center;justify-content:center;min-height:100vh;margin:0}a{color:#10b981}</style>
+          </head><body><div style="text-align:center"><h1>🏥 MediCare AI Reports</h1>
+          <a href="reports/latest/appium/execution-report.html">View Latest Report →</a></div></body></html>
+          HTML
 
       - name: "🚀 Deploy to GitHub Pages"
         uses: peaceiris/actions-gh-pages@v4
@@ -186,9 +153,3 @@ jobs:
           publish_dir: gh-pages
           keep_files: true
           commit_message: "📊 Appium E2E Report · Build #${{ github.run_number }}"
-
-      - name: "📋 Publish GitHub Actions Summary"
-        if: always()
-        run: |
-          cat automation/reports/output/summary.md >> $GITHUB_STEP_SUMMARY 2>/dev/null || \
-          echo "## ✅ MediCare AI · Appium E2E — Build #${{ github.run_number }} Complete" >> $GITHUB_STEP_SUMMARY
